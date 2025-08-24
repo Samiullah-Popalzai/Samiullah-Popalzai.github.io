@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEMIS App - Project Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.8rem;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-list span {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            overflow-x: auto;
+        }
+        .screenshots img {
+            width: 48%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-3px);
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+        .gallery img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HEMIS App</h1>
+        <p>Mobile application for efficient university administration.</p>
+    </header>
+
+    <div class="content">
+        <div class="section" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="../hemis/Slide1.PNG" alt="feature image" style="width: 100%; border-radius: 10px;">
+            </div>
+        <div style="flex: 1; min-width: 300px;">
+            <h2>Project Overview</h2>
+            <p>HEMIS App is a mobile application developed to streamline university administration. It allows staff and students to manage student records, class schedules, and notifications efficiently from a single interface. The app aims to reduce paperwork, improve communication, and provide a seamless administrative experience.</p>
+            <div style="text-align: center; margin-top: 10px;">
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.apro.hemis" target="_blank">View on Google Play Store</a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="section">
+            <h2>Your Role</h2>
+            <p>I was the sole developer responsible for designing the UI/UX, implementing core functionality using Kotlin and Jetpack Compose, integrating Firebase for backend services, and ensuring smooth performance across mobile devices.</p>
+        </div>
+
+        <div class="section">
+            <h2>Features</h2>
+            <ul>
+                <li>Manage student records and profiles efficiently</li>
+                <li>View and update class schedules</li>
+                <li>Receive real-time notifications for important events</li>
+                <li>User-friendly mobile interface built with Jetpack Compose</li>
+                <li>Secure cloud backend using Firebase</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tech Stack</h2>
+            <div class="tech-list">
+                <span>Kotlin</span>
+                <span>Jetpack Compose</span>
+                <span>Firebase</span>
+                <span>Android Studio</span>
+                <span>Mobile App Development</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Challenges & Solutions</h2>
+            <p>One major challenge was ensuring real-time synchronization of student records while maintaining app performance. I solved this by leveraging Firebase Realtime Database and Firestore for optimized data retrieval. Another challenge was creating an intuitive UI for both staff and students, which I addressed by designing clear navigation and responsive layouts.</p>
+        </div>
+
+        <div class="section">
+            <h2>Screenshots or Demo</h2>
+            <div class="screenshots">
+                <div class="gallery">
+                    <figure>
+                        <img src="../hemis/first.png" alt="Dashboard Screenshot">
+                        <figcaption>about</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../hemis/second.png" alt="Student Records Screenshot">
+                        <figcaption>screenshot-1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../hemis/third.png" alt="Schedule Screenshot">
+                        <figcaption>screenshot-2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../hemis/fourth.png" alt="Notifications Screenshot">
+                        <figcaption>screenshot-3</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Results & Impact</h2>
+            <p>HEMIS App significantly reduced administrative workload, streamlined communication between staff and students, and provided a modern interface for managing university operations. Feedback from internal users showed improved efficiency and satisfaction with the mobile platform.</p>
+        </div>
+
+        <div class="section">
+            <h2>Future Improvements</h2>
+            <p>Planned updates include analytics dashboards for university management, offline functionality for students without internet access, and enhanced notification settings for personalized alerts.</p>
+        </div>
+
+        <a href="../../index.html" class="btn">← Back to Portfolio</a>
+    </div>
+
+</body>
+</html>
