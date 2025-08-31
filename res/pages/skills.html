@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samiullah Popalzai — Skills & Certificates</title>
+  <meta name="description" content="Skills, tech stack, and certifications of Samiullah Popalzai — Mobile App, Backend, and Web Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --bg-soft:#0f1420;
+      --text:#e8eefc;
+      --muted:#9cb3d9;
+      --brand:#7c9aff;
+      --ring: rgba(124,154,255,.35);
+      --card: #101826;
+      --chip:#0c1322;
+      --border: #1b263b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f8fafc; --bg-soft:#ffffff; --text:#0b1220; --muted:#4b5563;
+        --brand:#3b82f6; --ring: rgba(59,130,246,.35);
+        --card:#ffffff; --chip:#f1f5f9; --border:#e5e7eb;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+
+    /* Layout */
+    .container{max-width:1100px; margin-inline:auto; padding:28px 20px 56px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 18px; background:var(--bg-soft); border:1px solid var(--border); border-radius:calc(var(--radius) + 6px); position:sticky; top:16px; backdrop-filter:saturate(1.2) blur(10px); box-shadow:var(--shadow)}
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{width:40px; height:40px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg, var(--brand), #6ee7b7); color:white; font-weight:800}
+    nav{display:flex; gap:8px; flex-wrap:wrap}
+    .pill{padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid var(--border); color:var(--muted)}
+    .cta{padding:10px 16px; border-radius:12px; background:var(--brand); color:white; font-weight:600; border:0; box-shadow:0 6px 14px var(--ring); cursor:pointer}
+
+    h1{font-size:clamp(24px, 4vw, 36px); margin:22px 0 10px}
+    .subtitle{color:var(--muted); margin:0 0 24px}
+
+    /* Cards & grids */
+    .grid{display:grid; gap:14px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){.grid.cols-3{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid.cols-3{grid-template-columns:1fr}}
+
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+    .card h3{margin:0 0 8px; font-size:18px}
+    .muted{color:var(--muted); font-size:14px}
+
+    /* Certificates */
+    .cert{display:flex; flex-direction:column; gap:12px}
+    .cert-head{display:flex; gap:12px; align-items:center}
+    .cert-logo{width:40px; height:40px; border-radius:8px; background:linear-gradient(135deg, #111827, #1f2937); display:grid; place-items:center; color:#93c5fd; font-weight:700}
+    .cert-title{margin:0}
+    .cert-meta{display:flex; gap:10px; flex-wrap:wrap}
+    .badge{padding:6px 10px; border-radius:999px; background:var(--chip); border:1px solid var(--border); color:var(--muted); font-size:12px}
+
+    footer{margin-top:40px; color:var(--muted); text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header aria-label="Site header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SP</div>
+        <div>
+          <strong>Samiullah Popalzai</strong>
+          <div class="muted">Mobile • Web • Backend</div>
+        </div>
+      </div>
+      <nav>
+        <a class="pill" href="index.html">Home</a>
+        <a class="pill" aria-current="page">Skills</a>
+        <a class="pill" href="projects.html">Projects</a>
+        <a class="pill" href="contact.html">Contact</a>
+      </nav>
+      <button class="cta" onclick="window.location.href='mailto:samipopalzai2018@gmail.com'">Hire Me</button>
+    </header>
+
+    <!-- Your skills and certificates content goes here -->
+
+  </div>
+</body>
+</html>
