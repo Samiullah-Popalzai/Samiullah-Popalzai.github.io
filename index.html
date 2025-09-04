@@ -19,13 +19,7 @@
       --shadow:0 10px 30px rgba(0,0,0,.35);
       --radius:18px;
     }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#f8fafc; --bg-soft:#ffffff; --text:#0b1220; --muted:#4b5563;
-        --brand:#3b82f6; --ring: rgba(59,130,246,.35);
-        --card:#ffffff; --chip:#f1f5f9; --border:#e5e7eb;
-      }
-    }
+
     *{box-sizing:border-box; margin:0; padding:0;}
     body{
       font-family:'Inter',sans-serif;
@@ -82,17 +76,12 @@
       <nav>
         <a class="pill" href="#" onclick="loadPage('res/pages/about/about.html', event)" aria-current="page">About</a>
         <a class="pill" href="#" onclick="loadPage('res/pages/skills/skills.html', event)">Skills</a>
-      <!--  <a class="pill" href="#" onclick="loadPage('services.html', event)">Services</a> -->
         <a class="pill" href="#" onclick="loadPage('res/pages/portfolio/portfolio.html', event)">Portfolio</a> 
-       <!-- <a class="pill" href="#" onclick="loadPage('demo.html', event)">Demo</a> -->
-
       </nav>
       <button class="cta" onclick="window.location.href='mailto:samipopalzai2018@gmail.com'">Hire Me</button>
     </header>
 
     <div id="content"><!-- dynamic content loads here --></div>
-
-    
   </div>
 
   <script>
