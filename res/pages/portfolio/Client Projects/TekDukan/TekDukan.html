@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TekDukan - Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --bg-soft:#0f1420; --text:#e8eefc; --muted:#9cb3d9; --brand:#7c9aff;
+      --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444; --ring: rgba(124,154,255,.35);
+      --card:#101826; --chip:#0c1322; --border:#1b263b; --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+    body{background:var(--bg); color:var(--text); line-height:1.7; padding:20px;}
+    
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      margin-bottom: 50px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    header h1{font-size:3rem; margin-bottom:12px; font-weight:700;}
+    header p{font-size:1.25rem; color:var(--muted);}
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .section{margin-bottom:40px;}
+    .section h2{
+      font-size:2rem;
+      color:var(--brand);
+      margin-bottom:15px;
+      border-left:6px solid var(--brand);
+      padding-left:12px;
+    }
+    .section p, .section ul {
+      text-align: justify;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    ul{padding-left:20px; list-style:disc;}
+    ul li{margin-bottom:8px;}
+
+    .overview{display:flex; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:50px;}
+    .overview img{
+      flex:1; min-width:320px; border-radius:12px;
+      box-shadow:var(--shadow); border:1px solid var(--border);
+    }
+    .overview-text{flex:1; min-width:320px;}
+
+    .tech-list{display:flex; flex-wrap:wrap; gap:12px;}
+    .tech-list span{
+      background:var(--chip); color:var(--muted);
+      padding:8px 14px; border-radius:10px;
+      font-size:.95rem; font-weight:500;
+      border:1px solid var(--border);
+    }
+
+    .gallery{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+    .gallery figure{text-align:center; flex:1 1 30%;}
+    .gallery img{
+      width:100%; max-width:260px;
+      border-radius:10px; box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+    .gallery figcaption{margin-top:8px; font-size:.9rem; color:var(--muted);}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--brand); color:#fff;
+      padding:12px 28px; border-radius:50px;
+      text-decoration:none; font-weight:600;
+      transition:.3s; border:none; cursor:pointer;
+    }
+    .btn:hover{opacity:0.9; transform:translateY(-3px);}
+    .btn-back{margin-top:40px; display:inline-block;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TekDukan</h1>
+    <p>Your online marketplace for electronics, fashion, and lifestyle products.</p>
+  </header>
+
+  <div class="content">
+
+    <div class="overview">
+      <img src="../TekDukan/icon.png" alt="TekDukan feature image">
+      <div class="overview-text">
+        <h2>Project Overview</h2>
+        <p>TekDukan is a full-featured e-commerce website designed to connect customers with a wide variety of products, from electronics to clothing and lifestyle goods. The platform is optimized for both desktop and mobile use, offering a seamless shopping experience with secure checkout and multiple payment methods.</p>
+        <div style="margin-top: 25px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Your Role</h2>
+      <p>I designed the UI/UX for TekDukan, implemented product browsing, search, shopping cart, and checkout flow. I integrated Firebase for backend services, including authentication, product management, and order tracking. I also developed the website with responsive design to ensure compatibility across all devices.</p>
+    </div>
+
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>Easy browsing and product search with filtering</li>
+        <li>Secure login and account management</li>
+        <li>Shopping cart with quick add/remove functions</li>
+        <li>Multiple payment options (cards, wallets, COD)</li>
+        <li>Responsive design for mobile and desktop</li>
+        <li>Order tracking and email notifications</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <div class="tech-list">
+        <span>HTML5 & CSS3</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>Responsive Web Design</span>
+        <span>E-commerce Integration</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Challenges & Solutions</h2>
+      <p>Real-time product inventory updates and handling large amounts of product data were major challenges. I addressed this using Firebase's real-time database and optimized UI for smooth browsing. Ensuring a modern, appealing look for an electronics and lifestyle platform required a careful choice of layout, colors, and animations.</p>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots or Demo</h2>
+      <div class="gallery">
+        <figure>
+          <img src="../TekDukan/1.png" alt="Homepage Screenshot">
+          
+        </figure>
+        <figure>
+          <img src="../TekDukan/2.png" alt="Product Listing Screenshot">
+        </figure>
+        <figure>
+          <img src="../TekDukan/3.png" alt="Shopping Cart Screenshot">
+        </figure>
+        <figure>
+          <img src="../TekDukan/4.png" alt="Checkout Screenshot">
+        </figure>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Results & Impact</h2>
+      <p>TekDukan became a trusted platform offering a variety of products with a fast, smooth shopping experience. It increased customer satisfaction and engagement, and its responsive design ensured accessibility on all devices.</p>
+    </div>
+
+    <div class="section">
+      <h2>Future Improvements</h2>
+      <p>Future upgrades include adding AI-powered recommendations, expanding payment gateway options, and integrating a loyalty rewards system for customers.</p>
+    </div>
+
+    <a href="../../../../../index.html" class="btn btn-back">← Back to About Page</a>
+
+  </div>
+
+</body>
+</html>

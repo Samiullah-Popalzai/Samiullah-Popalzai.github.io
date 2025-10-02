@@ -26,9 +26,11 @@
     .grid.cols-2{grid-template-columns:repeat(2,1fr)}
     @media (max-width:640px){.grid.cols-2{grid-template-columns:1fr}}
     .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
-      overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column}
+      overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+    }
     .card img{width:100%; height:180px; object-fit:cover; border-bottom:1px solid var(--border)}
-    .card-content{padding:18px; flex:1; display:flex; flex-direction:column}
+    .card-content{padding:18px; flex:1; display:flex; flex-direction:column;
+    }
     .card h3{margin:0 0 8px; font-size:18px}
     .muted{color:var(--muted); text-align: justify;}
     .badge{display:inline-block; margin-bottom:8px; padding:6px 10px; border-radius:999px;
@@ -44,7 +46,7 @@
   <div class="container">
     <main>
       <h1>Portfolio Projects</h1>
-      <p class="subtitle">Here are some of my featured projects showcasing skills in mobile, web, and backend development.</p>
+      <p class="subtitle">Here are some of my featured projects showcasing skills in Mobile, Web, and Website development.</p>
 
       <!-- Projects Section -->
       <div class="grid cols-2">
@@ -61,7 +63,7 @@
             </div>
             <p class="muted">Deep Delve Journey into buried chambers beneath the shifting sands, where memory and discovery intertwine. Match hidden artifact pairs concealed in ornate tomb walls, collapsing layers of dust and stone with each successful link. Every match unseals deeper corridors, revealing rarer relics and unlocking long-forgotten secrets.</p>
             <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client Projects/deepdelve/deepdelve.html" target="_blank">Read More</a>
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/deepdelve/deepdelve.html">Read More</a>
              <!-- <a class="btn" href="#" target="_blank">View on Play Store</a>  -->
             </div>
           </div>
@@ -80,7 +82,7 @@
             </div>
             <p class="muted">mbark on a charming adventure with Jackpeck, the memory game that's as fun to say as it is to play! A whimsical grid of hidden cards awaits, each concealing a powerful elemental icon. Your mission is to use your sharp memory and quick wits to find and match the identical pairs.</p>
             <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client Projects/jackpeck/jackpeck.html" target="_blank">Read More</a>
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/jackpeck/jackpeck.html" >Read More</a>
             <!--  <a class="btn" href="https://play.google.com/store/apps/details?id=com.jackpeckchokchok.jackpeck" target="_blank">View on Play Store</a> -->
             </div>
           </div>
@@ -101,7 +103,7 @@
             </div>
             <p class="muted">Mobile application for efficient university administration.</p>
             <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client Projects/hemis/hemis.html" target="_blank">Read More</a>
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/hemis/hemis.html" >Read More</a>
             <!--  <a class="btn" href="https://play.google.com/store/apps/details?id=com.apro.hemis" target="_blank">View on Play Store</a> -->
 
             </div>
@@ -123,11 +125,33 @@
             </div>
                 <p class="muted">E-commerce website and mobile app for online shopping with secure payments and smooth user experience.</p>
             <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client Projects/Tazaj/tazaj.html" target="_blank">Read More</a>
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/Tazaj/tazaj.html" >Read More</a>
 
             </div>
           </div>
         </article>
+
+        <!-- TekDukan -->
+        <article class="card">
+          <img src="res/pages/portfolio/Client Projects/TekDukan/icon.png" alt="Admin Panel Preview" style="object-fit:fill; height: 400px; width: 100%;" />
+          <div class="card-content">
+            <h3>TekDukan – E-Commerce Website</h3>
+            <div>
+              <span class="badge">PHP</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+            </div>
+            <p class="muted">
+              TekDukan is a full-featured e-commerce website designed to connect customers with a wide variety of products, from electronics to clothing and lifestyle goods. The platform is optimized for both desktop and mobile use, offering a seamless shopping experience with secure checkout and multiple payment methods.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/TekDukan/TekDukan.html" >Read More</a>
+              <a class="btn" href="https://tekdukan.com/fa/" target="_blank">Visit Website</a> 
+            </div>
+          </div>
+        </article>
+
 
         <!-- Admin Panel -->
         <article class="card">
@@ -145,7 +169,7 @@
               to provide a secure, responsive, and user-friendly dashboard.
             </p>
             <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client Projects/Maher_Admin_Panel/admin.html" target="_blank">Read More</a>
+              <a class="btn primary" href="res/pages/portfolio/Client Projects/Maher_Admin_Panel/admin.html">Read More</a>
               <a class="btn" href="https://github.com/Samiullah-Popalzai/Maher-Bet-Analyzer-Admin-Panel" target="_blank">View on Github</a> 
             </div>
           </div>
