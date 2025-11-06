@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Droploop Collective - Shopify Store Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --bg-soft:#0f1420; --text:#e8eefc; --muted:#9cb3d9; --brand:#7c9aff;
+      --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444; --ring: rgba(124,154,255,.35);
+      --card:#101826; --chip:#0c1322; --border:#1b263b; --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+    body{background:var(--bg); color:var(--text); line-height:1.7; padding:20px;}
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      margin-bottom: 50px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    header h1{font-size:3rem; margin-bottom:12px; font-weight:700;}
+    header p{font-size:1.25rem; color:var(--muted);}
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .section{margin-bottom:40px;}
+    .section h2{
+      font-size:2rem;
+      color:var(--brand);
+      margin-bottom:15px;
+      border-left:6px solid var(--brand);
+      padding-left:12px;
+    }
+    .section p, .section ul {
+      text-align: justify;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    ul{padding-left:20px; list-style:disc;}
+    ul li{margin-bottom:8px;}
+
+    .overview{display:flex; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:50px;}
+    .overview img{
+      flex:1; min-width:320px; border-radius:12px;
+      box-shadow:var(--shadow); border:1px solid var(--border);
+    }
+    .overview-text{flex:1; min-width:320px;}
+
+    .tech-list{display:flex; flex-wrap:wrap; gap:12px;}
+    .tech-list span{
+      background:var(--chip); color:var(--muted);
+      padding:8px 14px; border-radius:10px;
+      font-size:.95rem; font-weight:500;
+      border:1px solid var(--border);
+    }
+
+    .gallery{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+    .gallery figure{text-align:center; flex:1 1 30%;}
+    .gallery img{
+      width:100%; max-width:260px;
+      border-radius:10px; box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+    .gallery figcaption{margin-top:8px; font-size:.9rem; color:var(--muted);}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--brand); color:#fff;
+      padding:12px 28px; border-radius:50px;
+      text-decoration:none; font-weight:600;
+      transition:.3s; border:none; cursor:pointer;
+    }
+    .btn:hover{opacity:0.9; transform:translateY(-3px);}
+    .btn-back{margin-top:40px; display:inline-block;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Droploop Collective</h1>
+    <p>Modern Shopify store offering unique digital and physical products for creative entrepreneurs.</p>
+  </header>
+
+  <div class="content">
+
+    <!-- Overview -->
+    <div class="overview">
+      <img src="2.png" alt="Droploop Collective Homepage">
+      <div class="overview-text">
+        <h2>Project Overview</h2>
+        <p>Droploop Collective is a fully customized Shopify e-commerce website designed to showcase a curated collection of fashion, lifestyle, and creative goods. The project focused on delivering a clean, user-friendly shopping experience with optimized performance, intuitive navigation, and seamless mobile responsiveness.</p>
+        <div style="margin-top: 25px;">
+          <a class="btn" href="https://droploopcollective.com" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Role -->
+    <div class="section">
+      <h2>Your Role</h2>
+      <p>I was responsible for the complete design and development of the store — including theme customization, product page setup, collection organization, responsive layout adjustments, and third-party app integrations to enhance user experience and conversion rate.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>Custom-designed Shopify theme with smooth animations</li>
+        <li>Optimized homepage showcasing featured collections and promotions</li>
+        <li>Integrated product reviews, newsletter sign-up, and upsell sections</li>
+        <li>Responsive layout for mobile, tablet, and desktop</li>
+        <li>SEO optimization and fast page loading speed</li>
+      </ul>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <div class="tech-list">
+        <span>Shopify</span>
+        <span>Liquid</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Shopify Admin API</span>
+      </div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="section">
+      <h2>Challenges & Solutions</h2>
+      <p>One challenge was customizing Shopify’s Liquid templates while keeping the store lightweight and fast. I optimized theme assets and implemented lazy loading for product images. Additionally, aligning brand aesthetics across different screen sizes required fine-tuned responsive design adjustments using CSS grid and flexbox.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="section">
+      <h2>Visual Preview</h2>
+      <div class="gallery">
+        <figure>
+          <img src="3.png" alt="Product Collection Page">
+          <figcaption>Collection Page</figcaption>
+        </figure>
+        <figure>
+          <img src="4.png" alt="Product Detail Page">
+          <figcaption>Product Detail Page</figcaption>
+        </figure>
+        <figure>
+          <video controls style="width:100%; max-width:260px; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,.35); border:1px solid #1b263b;">
+            <source src="prof.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Video showing me building the Droploop Collective Shopify website</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="section">
+      <h2>Results & Impact</h2>
+      <p>The final store achieved a modern, cohesive look that aligned perfectly with the brand’s identity. Site speed and user engagement improved notably after launch. Customer retention also increased thanks to a smoother checkout experience and personalized product recommendations.</p>
+    </div>
+
+    <!-- Future Improvements -->
+    <div class="section">
+      <h2>Future Improvements</h2>
+      <p>Upcoming updates include integrating AI-based product recommendations, enhancing analytics tracking, and expanding the website with a creative blog and membership system for exclusive drops.</p>
+    </div>
+
+    <a href="../../../../../index.html" class="btn btn-back">← Back to About Page</a>
+
+  </div>
+
+</body>
+</html>

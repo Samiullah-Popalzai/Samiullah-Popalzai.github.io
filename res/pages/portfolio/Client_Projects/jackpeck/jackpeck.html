@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackpeck - Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --bg-soft:#0f1420; --text:#e8eefc; --muted:#9cb3d9; --brand:#7c9aff;
+      --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444; --ring: rgba(124,154,255,.35);
+      --card:#101826; --chip:#0c1322; --border:#1b263b; --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+    body{background:var(--bg); color:var(--text); line-height:1.7; padding:20px;}
+    
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      margin-bottom: 50px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    header h1{font-size:3rem; margin-bottom:12px; font-weight:700;}
+    header p{font-size:1.25rem; color:var(--muted);}
+
+    /* Content */
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    /* Sections */
+    .section{margin-bottom:40px;}
+    .section h2{
+      font-size:2rem;
+      color:var(--brand);
+      margin-bottom:15px;
+      border-left:6px solid var(--brand);
+      padding-left:12px;
+    }
+    .section p, .section ul {
+      text-align: justify;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    ul{padding-left:20px; list-style:disc;}
+    ul li{margin-bottom:8px;}
+
+    /* Overview */
+    .overview{display:flex; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:50px;}
+    .overview img{
+      flex:1; min-width:320px; border-radius:12px;
+      box-shadow:var(--shadow); border:1px solid var(--border);
+    }
+    .overview-text{flex:1; min-width:320px;}
+
+    /* Tech Stack */
+    .tech-list{display:flex; flex-wrap:wrap; gap:12px;}
+    .tech-list span{
+      background:var(--chip); color:var(--muted);
+      padding:8px 14px; border-radius:10px;
+      font-size:.95rem; font-weight:500;
+      border:1px solid var(--border);
+    }
+
+    /* Gallery */
+    .gallery{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+    .gallery figure{text-align:center; flex:1 1 30%;}
+    .gallery img{
+      width:100%; max-width:260px;
+      border-radius:10px; box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+    .gallery figcaption{margin-top:8px; font-size:.9rem; color:var(--muted);}
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--brand); color:#fff;
+      padding:12px 28px; border-radius:50px;
+      text-decoration:none; font-weight:600;
+      transition:.3s; border:none; cursor:pointer;
+    }
+    .btn:hover{opacity:0.9; transform:translateY(-3px);}
+    .btn-back{margin-top:40px; display:inline-block;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jackpeck</h1>
+    <p>A delightful memory game! Match the elemental icons.</p>
+  </header>
+
+  <div class="content">
+
+    <!-- Overview -->
+    <div class="overview">
+      <img src="../jackpeck/icon.png" alt="Jackpeck Icon">
+      <div class="overview-text">
+        <h2>Project Overview</h2>
+        <p>Embark on a charming adventure with Jackpeck, the memory game that's as fun to say as it is to play! A whimsical grid of hidden cards awaits, each concealing a powerful elemental icon. Your mission is to use your sharp memory and quick wits to find and match the identical pairs.</p>
+        <p>With every successful match, you'll earn points and get closer to clearing the board. But watch the clock and keep an eye on your moves! This delightful brain-teaser features stylish 3D animations, a clean and colorful interface, and keeps track of all your best scores.</p>
+        <div style="margin-top: 25px;">
+          <a class="btn" target="_blank" href="app-release.aab">Download .aab File</a> 
+        </div>
+      </div>
+    </div>
+
+    <!-- Role -->
+    <div class="section">
+      <h2>Your Role</h2>
+      <p>I was the sole developer for this project, responsible for designing the gameplay, coding the mechanics, creating the visuals, and optimizing performance across devices.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>Engaging memory gameplay with elemental icons</li>
+        <li>Stylish 3D animations and colorful interface</li>
+        <li>Score tracking for all your best matches</li>
+        <li>Challenging timed modes to test memory and speed</li>
+        <li>Optimized for desktop and mobile devices</li>
+      </ul>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <div class="tech-list">
+        <span>Unity Engine</span>
+        <span>C#</span>
+        <span>Responsive Design</span>
+      </div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="section">
+      <h2>Challenges & Solutions</h2>
+      <p>One major challenge was designing a visually appealing yet performant grid for multiple devices. I solved this by optimizing card animations and preloading assets efficiently. Balancing difficulty while keeping the game fun required iterative testing and adjustments to the matching logic.</p>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="section">
+      <h2>Screenshots or Demo</h2>
+      <div class="gallery">
+        <figure>
+          <img src="../jackpeck/1.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../jackpeck/2.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../jackpeck/3.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../jackpeck/4.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../jackpeck/5.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../jackpeck/6.png" alt="Gameplay Screenshot">
+          <figcaption>Gameplay Screenshot</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="section">
+      <h2>Results & Impact</h2>
+      <p>Jackpeck was well-received in playtesting, providing a fun, brain-teasing experience for players. It strengthened my skills in game logic, UI/UX design, and performance optimization, and demonstrated my ability to deliver a polished, engaging game.</p>
+    </div>
+
+    <!-- Future Improvements -->
+    <div class="section">
+      <h2>Future Improvements</h2>
+      <p>Future plans include adding multiple themes, additional game modes, multiplayer challenges, and daily rewards to enhance player engagement and replayability.</p>
+    </div>
+
+    <a href="../../../../../index.html" class="btn btn-back">← Back to About Page</a>
+  </div>
+
+</body>
+</html>

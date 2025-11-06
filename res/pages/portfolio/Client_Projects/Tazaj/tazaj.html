@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tazaj - Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --bg-soft:#0f1420; --text:#e8eefc; --muted:#9cb3d9; --brand:#7c9aff;
+      --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444; --ring: rgba(124,154,255,.35);
+      --card:#101826; --chip:#0c1322; --border:#1b263b; --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+    body{background:var(--bg); color:var(--text); line-height:1.7; padding:20px;}
+    
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      color: var(--text);
+      border-radius: var(--radius);
+      margin-bottom: 50px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    header h1{font-size:3rem; margin-bottom:12px; font-weight:700;}
+    header p{font-size:1.25rem; color:var(--muted);}
+
+    /* Content */
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    /* Sections */
+    .section{margin-bottom:40px;}
+    .section h2{
+      font-size:2rem;
+      color:var(--brand);
+      margin-bottom:15px;
+      border-left:6px solid var(--brand);
+      padding-left:12px;
+    }
+    .section p, .section ul {
+      text-align: justify;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    ul{padding-left:20px; list-style:disc;}
+    ul li{margin-bottom:8px;}
+
+    /* Overview */
+    .overview{display:flex; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:50px;}
+    .overview img{
+      flex:1; min-width:320px; border-radius:12px;
+      box-shadow:var(--shadow); border:1px solid var(--border);
+    }
+    .overview-text{flex:1; min-width:320px;}
+
+    /* Tech Stack */
+    .tech-list{display:flex; flex-wrap:wrap; gap:12px;}
+    .tech-list span{
+      background:var(--chip); color:var(--muted);
+      padding:8px 14px; border-radius:10px;
+      font-size:.95rem; font-weight:500;
+      border:1px solid var(--border);
+    }
+
+    /* Gallery */
+    .gallery{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+    .gallery figure{text-align:center; flex:1 1 30%;}
+    .gallery img{
+      width:100%; max-width:260px;
+      border-radius:10px; box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+    .gallery figcaption{margin-top:8px; font-size:.9rem; color:var(--muted);}
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--brand); color:#fff;
+      padding:12px 28px; border-radius:50px;
+      text-decoration:none; font-weight:600;
+      transition:.3s; border:none; cursor:pointer;
+    }
+    .btn:hover{opacity:0.9; transform:translateY(-3px);}
+    .btn-back{margin-top:40px; display:inline-block;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tazaj</h1>
+    <p>E-commerce website and mobile app for online shopping.</p>
+  </header>
+
+  <div class="content">
+
+    <!-- Overview -->
+    <div class="overview">
+      <img src="../Tazaj/icon.png" alt="Tazaj feature image">
+      <div class="overview-text">
+        <h2>Project Overview</h2>
+        <p>Tazaj is a complete e-commerce platform built as both a website and mobile application. It allows users to browse products, add them to cart, and securely complete purchases with multiple payment methods. The goal of Tazaj was to create a smooth online shopping experience, focusing on beauty and lifestyle products.</p>
+        <div style="margin-top: 25px;">
+        <!--  <a class="btn" href="#" target="_blank">View Website</a>  -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Role -->
+    <div class="section">
+      <h2>Your Role</h2>
+      <p>I was responsible for designing the UI/UX, implementing product listings, shopping cart, checkout flow, and integrating Firebase as the backend. I also developed both the website (responsive) and the Android mobile app using Flutter and Android Studio.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+      <h2>Features</h2>
+      <ul>
+        <li>Browse and search products with categories and filters</li>
+        <li>Secure user authentication and account management</li>
+        <li>Shopping cart and seamless checkout process</li>
+        <li>Payment gateway integration (credit/debit, wallets, etc.)</li>
+        <li>Responsive web design & cross-platform mobile app</li>
+        <li>Order tracking and notifications</li>
+      </ul>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <div class="tech-list">
+        <span>Flutter</span>
+        <span>Firebase</span>
+        <span>Android Studio</span>
+        <span>Web Development</span>
+        <span>E-commerce Integration</span>
+      </div>
+    </div>
+
+    <!-- Challenges -->
+    <div class="section">
+      <h2>Challenges & Solutions</h2>
+      <p>One of the main challenges was ensuring real-time synchronization of product inventory across website and app. I solved this by using Firebase as the single source of truth. Another challenge was building a design that felt modern and engaging for beauty products, which I achieved by using clean layouts, high-quality images, and smooth UI animations.</p>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="section">
+      <h2>Screenshots or Demo</h2>
+      <div class="gallery">
+        <figure>
+          <img src="../Tazaj/1.jpeg" alt="Homepage Screenshot">
+          <figcaption>Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../Tazaj/2.jpeg" alt="Product Listing Screenshot">
+          <figcaption>Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../Tazaj/3.jpeg" alt="Shopping Cart Screenshot">
+          <figcaption>Screenshot</figcaption>
+        </figure>
+        <figure>
+          <img src="../Tazaj/4.jpeg" alt="Checkout Screenshot">
+          <figcaption>Screenshot</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="section">
+      <h2>Results & Impact</h2>
+      <p>Tazaj provided a smooth and secure shopping experience for users, increasing customer engagement and trust. The platform demonstrated strong performance across both web and mobile, making it a reliable solution for e-commerce businesses targeting the beauty and lifestyle industry.</p>
+    </div>
+
+    <!-- Future Improvements -->
+    <div class="section">
+      <h2>Future Improvements</h2>
+      <p>Planned upgrades include adding AI-powered product recommendations, integrating more local payment gateways, and improving analytics for business owners to track sales and customer behavior.</p>
+    </div>
+
+    <a href="../../../../../index.html" class="btn btn-back">← Back to About Page</a>
+
+  </div>
+
+</body>
+</html>
