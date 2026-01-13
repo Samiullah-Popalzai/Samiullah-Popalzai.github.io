@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.32f1
+CRC: 2135846833
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2508129bb933ec677c96c7928a413008
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 847e07d4e0f4ea32f0fed6d4700d7ac7
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 09e80dd8e67500f957ca341f2b24abdc
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scenes/pra2.unity
+Dependencies: []
