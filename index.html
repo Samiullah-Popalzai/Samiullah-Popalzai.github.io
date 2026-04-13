@@ -1,68 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samiullah Popalzai | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b0f17;
-      --bg-soft:#0f1420;
-      --text:#e8eefc;
-      --muted:#9cb3d9;
-      --brand:#7c9aff;
-      --ring: rgba(124,154,255,.35);
-      --card:#101826;
-      --chip:#0c1322;
-      --border:#1b263b;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-      --radius:18px;
+    :root {
+      --bg: #0b0f17;
+      --bg-soft: #0f1420;
+      --text: #e8eefc;
+      --muted: #9cb3d9;
+      --brand: #7c9aff;
+      --ring: rgba(124, 154, 255, .35);
+      --card: #101826;
+      --chip: #0c1322;
+      --border: #1b263b;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --radius: 18px;
     }
 
-    *{box-sizing:border-box; margin:0; padding:0;}
-    body{
-      font-family:'Inter',sans-serif;
-      line-height:1.6;
-      background:var(--bg);
-      color:var(--text);
-    }
-    a{color:inherit; text-decoration:none}
-
-    .container{max-width:1100px; margin-inline:auto; padding:28px 20px 56px}
-
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:14px 18px;
-      background:var(--bg-soft);
-      border:1px solid var(--border);
-      border-radius:calc(var(--radius) + 6px);
-      position:sticky; top:16px; z-index:1000;
-      backdrop-filter:saturate(1.2) blur(10px);
-      box-shadow:var(--shadow);
-    }
-    .brand{display:flex; gap:12px; align-items:center}
-    .logo{width:40px; height:40px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg,var(--brand),#6ee7b7); color:white; font-weight:800}
-    nav{display:flex; gap:8px; flex-wrap:wrap}
-    .pill{padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid var(--border); color:var(--muted)}
-    .pill[aria-current="page"]{background:var(--brand); color:white; border-color:transparent}
-    .cta{padding:10px 16px; border-radius:12px; background:var(--brand); color:white; font-weight:600; border:0; box-shadow:0 6px 14px var(--ring); cursor:pointer}
-
-    #sample{
-      margin-top:28px; padding:28px;
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      min-height:400px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    footer{margin-top:40px; color:var(--muted); text-align:center}
-    h2{
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .container {
+      max-width: 1100px;
+      margin-inline: auto;
+      padding: 28px 20px 56px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 18px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 6px);
+      position: sticky;
+      top: 16px;
+      z-index: 1000;
+      backdrop-filter: saturate(1.2) blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand), #6ee7b7);
+      color: white;
+      font-weight: 800
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      flex:1;
+      justify-content: center;
+    }
+
+    .pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid var(--border);
+      color: var(--muted)
+    }
+
+    .pill[aria-current="page"] {
+      background: var(--brand);
+      color: white;
+      border-color: transparent
+    }
+
+    .cta {
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: var(--brand);
+      color: white;
+      font-weight: 600;
+      border: 0;
+      box-shadow: 0 6px 14px var(--ring);
+      cursor: pointer
+    }
+
+    #sample {
+      margin-top: 28px;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      min-height: 400px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      text-align: center
+    }
+
+    h2 {
       color: var(--brand);
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header aria-label="Site header">
@@ -73,42 +143,44 @@
           <div class="muted">Software Engineer</div>
         </div>
       </div>
-      <nav>
+      <nav style="align-items:stretch;">
         <a class="pill" href="#" onclick="loadPage('res/pages/about/about.html', event)" aria-current="page">About</a>
-        <a class="pill" href="#" onclick="loadPage('res/pages/skills/skills.html', event)">Skills</a>
-        <a class="pill" href="#" onclick="loadPage('res/pages/portfolio/portfolio.html', event)">Portfolio</a> 
+        <a class="pill" href="#" onclick="loadPage('res/pages/skills/skills.html', event)">Skills & Certificates</a>
+        <a class="pill" href="#" onclick="loadPage('res/pages/portfolio/portfolio.html', event)">Portfolio</a>
       </nav>
-      <button class="cta" onclick="window.location.href='mailto:samipopalzai2018@gmail.com'">Hire Me</button>
     </header>
 
-    <div id="content"><!-- dynamic content loads here --></div>
+    <div id="content">
+      <!-- dynamic content loads here -->
+    </div>
   </div>
 
   <script>
-  function loadPage(page, event) {
-    fetch(page)
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("content").innerHTML = data;
+    function loadPage(page, event) {
+      fetch(page)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("content").innerHTML = data;
 
-        // Update active pill if event is provided
-        if (event) {
-          document.querySelectorAll("nav .pill")
-            .forEach(link => link.removeAttribute("aria-current"));
-          event.target.setAttribute("aria-current", "page");
-        }
-      })
-      .catch(err => {
-        document.getElementById("content").innerHTML =
-          "<p style='color:red'>Error loading " + page + "</p>";
-      });
-  }
+          // Update active pill if event is provided
+          if (event) {
+            document.querySelectorAll("nav .pill")
+              .forEach(link => link.removeAttribute("aria-current"));
+            event.target.setAttribute("aria-current", "page");
+          }
+        })
+        .catch(err => {
+          document.getElementById("content").innerHTML =
+            "<p style='color:red'>Error loading " + page + "</p>";
+        });
+    }
 
-  // Load default page when site first opens
-  window.addEventListener("DOMContentLoaded", () => {
-    loadPage('res/pages/about/about.html');
-  });
-</script>
+    // Load default page when site first opens
+    window.addEventListener("DOMContentLoaded", () => {
+      loadPage('res/pages/about/about.html');
+    });
+  </script>
 
 </body>
+
 </html>
