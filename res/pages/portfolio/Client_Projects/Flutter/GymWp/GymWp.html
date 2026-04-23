@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Gym WP · Workout Tracker & Log | Flutter Fitness App Case Study</title>
+
+  <!-- Google Fonts + Design System -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../../../style.css">
+
+  <style>
+    /* Additional inline styles for missing images/videos - replace with actual assets */
+    .placeholder-video {
+      background: linear-gradient(135deg, #1a1f2e, #0f1420);
+      border-radius: 24px;
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7c9aff;
+      font-size: 0.9rem;
+      border: 1px solid #1b263b;
+    }
+    .placeholder-img {
+      background: linear-gradient(135deg, #1a1f2e, #0f1420);
+      border-radius: 20px;
+      width: 100%;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7c9aff;
+      font-size: 0.8rem;
+      border: 1px solid #1b263b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="row" style="padding: 0px 40px; padding-top: 20px;">
+      <p class="headline">Gym WP · Workout Tracker & Log</p>
+      <a href="https://play.google.com/store/apps/details?id=fitness.online.app" target="_blank" class="primaryButton">Google Play →</a>
+    </div>
+    <!-- Replace with actual demo video of the app -->
+    <video class="bannerImage" autoplay muted loop playsinline controls poster="app_poster.png">
+      <source src="gymwp_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <div class="placeholder-video">▶️ App Demo Video (add gymwp_demo.mp4)</div>
+    </video>
+  </header>
+
+  <div class="content">
+
+    <!--Tech Stack & Tools-->
+    <div class="section">
+      <h2>Tech Stack & Tools</h2>
+      <div class="grid">
+        <div class="card"><h6>Flutter</h6></div>
+        <div class="card"><h6>Dart</h6></div>
+        <div class="card"><h6>Provider</h6></div>
+        <div class="card"><h6>SQLite</h6></div>
+        <div class="card"><h6>SharedPreferences</h6></div>
+        <div class="card"><h6>FL Chart</h6></div>
+        <div class="card"><h6>animate_do</h6></div>
+        <div class="card"><h6>OpenAI API</h6></div>
+        <div class="card"><h6>Google Fonts</h6></div>
+      </div>
+      <p>
+        Gym WP is a full-featured Flutter fitness application built for a client and published on Google Play. The app
+        leverages Flutter's cross-platform capabilities for smooth performance on Android devices. Provider manages
+        state across workout sessions, user profiles, and progress tracking. SQLite stores workout history locally
+        while SharedPreferences handles user preferences. FL Chart powers beautiful progress visualizations, and
+        animate_do adds polished micro-interactions. The OpenAI API (GPT-3.5-turbo) drives an intelligent fitness
+        assistant that provides personalized coaching, workout analysis, and nutrition guidance.
+      </p>
+    </div>
+
+    <!--My Role-->
+    <div class="row section">
+      <div>
+        <h2>My Role</h2>
+        <p>
+          As the sole developer on this client project, I handled complete end-to-end delivery from concept to Google
+          Play publication. I consulted directly with the client to understand their vision for a workout tracking app,
+          then translated that into a fully functional Flutter application. I architected the local database schema
+          (SQLite), implemented the provider-based state management system, and designed the modern UI/UX with a focus
+          on clean aesthetics and intuitive workout logging.
+        </p>
+        <p>
+          I also integrated the OpenAI API to create an AI-powered fitness coach that analyzes workout data and provides
+          personalized insights. The app includes full workout plan creation, exercise tracking (sets, reps, weights,
+          duration), session logging, body metrics tracking (weight, height, BMI), and visual progress charts. I
+          prepared the app for production, handled Play Store listing assets, and successfully published the release.
+          Client credentials and sensitive data have been removed — the source code remains private per client
+          agreement.
+        </p>
+      </div>
+      <div>
+        <!-- Replace with actual screenshot of the app dashboard -->
+        <div class="placeholder-img">📱 App Dashboard Screenshot<br>(add gymwp_dashboard.png)</div>
+      </div>
+    </div>
+
+    <!--Client Review / Project Status-->
+    <div class="section">
+      <h2>Project Status</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>✅ Published</h3>
+          <p>Live on Google Play — available for download</p>
+        </div>
+        <div class="card">
+          <h3>🔒 Private Code</h3>
+          <p>Client credentials removed — not publicly reusable</p>
+        </div>
+        <div class="card">
+          <h3>👨‍💻 Full Stack</h3>
+          <p>UI + logic + AI + Play Store deployment</p>
+        </div>
+      </div>
+      <a href="playstore_listing.png" target="_blank">
+        <!-- Replace with actual Play Store screenshot or rating -->
+        <div class="placeholder-img" style="margin-top: 16px;">📱 Google Play Listing Screenshot<br>(add playstore_listing.png)</div>
+      </a>
+    </div>
+
+    <!--Key Metrics / Case Study Highlights-->
+    <div class="section">
+      <h2>Core Impact & Features</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Workout Plans</h3>
+          <p>Create custom workouts with exercises, sets, reps, and weights</p>
+        </div>
+        <div class="card">
+          <h3>Session Logging</h3>
+          <p>Track every workout with start/complete session functionality</p>
+        </div>
+        <div class="card">
+          <h3>Progress Analytics</h3>
+          <p>Weekly/monthly stats with visual charts and achievements</p>
+        </div>
+        <div class="card">
+          <h3>🤖 AI Coach</h3>
+          <p>GPT-3.5-turbo powered assistant — personalized fitness coaching</p>
+        </div>
+        <div class="card">
+          <h3>Body Metrics</h3>
+          <p>Weight, height, BMI tracking with goal setting</p>
+        </div>
+        <div class="card">
+          <h3>Exercise Library</h3>
+          <p>Structured collection of exercises with form guidance</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <p><strong>What the app is:</strong> A Flutter fitness tracking application built for a client and published on
+            Google Play. It helps users build muscle, lose weight, and gain strength through structured workout
+            tracking and progress monitoring. The app solves the problem of inconsistent gym logging by providing an
+            intuitive interface that makes recording sets, reps, and weights effortless.</p>
+
+          <p><strong>Workout System in detail:</strong> Users can create unlimited custom workouts, add exercises with
+            sets, reps, and weights, attach notes to any exercise, and start/complete workout sessions. All data is
+            stored locally in SQLite, ensuring privacy and offline functionality. The session logger tracks duration
+            and provides real-time feedback during workouts.</p>
+
+          <p><strong>AI Feature breakdown:</strong> The integrated AI fitness assistant uses OpenAI's GPT-3.5-turbo to
+            deliver personalized coaching. It analyzes workout history to identify strengths and areas for improvement,
+            provides workout recommendations based on past performance, offers nutrition and motivation guidance, and
+            maintains conversation history for context-aware advice. Users can ask anything from "how to break a
+            plateau" to "what should I eat post-workout."</p>
+
+          <p><strong>Progress Tracking System:</strong> The app includes weekly and monthly stats dashboards with FL
+            Chart visualizations. Users can track weight trends, volume progress, and exercise-specific improvements.
+            An achievement system gamifies consistency, rewarding users for streaks and milestones. The profile system
+            allows users to set fitness goals (build muscle, lose weight, gain strength) and tracks BMI automatically
+            from height/weight inputs.</p>
+
+          <p><strong>Technical Architecture:</strong> The project follows a clean structure with separate folders for
+            models (User, Workout, Exercise), providers (UserProvider, WorkoutProvider), screens (Home, Workout,
+            Progress, Profile), widgets (WorkoutCard, StatsCard), and services (StorageService). This modular approach
+            ensures maintainability and scalability. The OpenAI integration uses the HTTP package with secure API key
+            handling (removed in public references).</p>
+        </div>
+        <div class="card" style="padding: 5px;">
+          <div class="scrollable popup" style="flex: 1; height: 600px; overflow-y: auto; padding: 10px;">
+            <!-- Replace with actual app screenshots - add 0.jpg through 8.jpg -->
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Workout Screen<br>(add 0.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Progress Charts<br>(add 1.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 AI Coach Chat<br>(add 2.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Exercise Library<br>(add 3.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Profile & Metrics<br>(add 4.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Workout Creation<br>(add 5.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Session Logger<br>(add 6.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Statistics Dashboard<br>(add 7.jpg)</div>
+            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Settings<br>(add 8.jpg)</div>
+          </div>
+          <p style="text-align: center;">App Walkthrough → add screenshots 0.jpg to 8.jpg</p>
+        </div>
+      </div>
+    </div>
+
+    <!--How I Built The App (detailed walkthrough)-->
+    <div class="section flex-row">
+      <div>
+        <h2>How I Built The App</h2>
+        <p>
+          I started by designing the database schema using SQLite to store workouts, exercises, sets, and user progress
+          data. The relational structure allows efficient queries for progress charts and historical session data. I
+          then set up Provider for state management, ensuring real-time UI updates when users log workouts or update
+          their profile.
+        </p>
+        <p>
+          For the UI, I built all screens from scratch using Flutter's widget system. The home screen features a quick
+          start button, recent workouts, and daily motivation. The workout screen includes a drag-and-drop exercise
+          reorder feature, set timers, and rest tracking. Progress screens use FL Chart to render animated line and bar
+          charts showing volume trends and body metrics over time. I added animate_do for smooth fade-ins and slide
+          transitions that make the app feel polished.
+        </p>
+        <p>
+          The AI assistant was integrated using the OpenAI API (GPT-3.5-turbo). I built a chat interface that sends
+          workout history context with each request, allowing the AI to give personalized advice. The conversation
+          history is cached locally to maintain continuity. I also implemented secure API key storage (excluded from
+          public repo) and a fallback mode for offline scenarios.
+        </p>
+        <p>
+          Finally, I tested the app extensively on multiple Android devices, optimized performance (reducing build
+          times and eliminating unnecessary rebuilds), and prepared Play Store assets including screenshots, feature
+          graphics, and a privacy policy. The app was successfully published and is now available for download. The
+          entire development cycle took approximately 6 weeks from initial consultation to Play Store launch.
+        </p>
+      </div>
+      <div>
+        <!-- Replace with actual build process video or demo -->
+        <video class="bannerImage" controls preload="metadata" poster="how_i_built_poster.png">
+          <source src="how_i_built_gymwp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          <div class="placeholder-video">🎬 How I Built It (add how_i_built_gymwp.mp4)</div>
+        </video>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
