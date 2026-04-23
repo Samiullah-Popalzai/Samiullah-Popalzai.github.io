@@ -3,286 +3,212 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruvi - Shopify Premium Store Project</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0b0f17;
-            --bg-soft: #0f1420;
-            --text: #e8eefc;
-            --muted: #9cb3d9;
-            --brand: #7c9aff;
-            --ok: #22c55e;
-            --warn: #f59e0b;
-            --danger: #ef4444;
-            --ring: rgba(124, 154, 255, .35);
-            --card: #101826;
-            --chip: #0c1322;
-            --border: #1b263b;
-            --shadow: 0 10px 30px rgba(0, 0, 0, .35);
-            --radius: 18px;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Bruvi · Premium Coffee Shopify Plus Store | Case Study</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+    <!-- Google Fonts + The Great War Design System -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../../style.css">
 
-        body {
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: var(--card);
-            color: var(--text);
-            border-radius: var(--radius);
-            margin-bottom: 50px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            color: var(--muted);
-        }
-
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: var(--card);
-            padding: 40px;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            color: var(--brand);
-            margin-bottom: 15px;
-            border-left: 6px solid var(--brand);
-            padding-left: 12px;
-        }
-
-        .section p,
-        .section ul {
-            text-align: justify;
-            font-size: 1rem;
-            color: var(--muted);
-        }
-
-        ul {
-            padding-left: 20px;
-            list-style: disc;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        .overview {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .overview img {
-            flex: 1;
-            min-width: 320px;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .overview-text {
-            flex: 1;
-            min-width: 320px;
-        }
-
-        .tech-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .tech-list span {
-            background: var(--chip);
-            color: var(--muted);
-            padding: 8px 14px;
-            border-radius: 10px;
-            font-size: .95rem;
-            font-weight: 500;
-            border: 1px solid var(--border);
-        }
-
-        .gallery {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .gallery figure {
-            text-align: center;
-            flex: 1 1 30%;
-        }
-
-        .gallery img {
-            width: 100%;
-            max-width: 260px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .gallery figcaption {
-            margin-top: 8px;
-            font-size: .9rem;
-            color: var(--muted);
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--brand);
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: .3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-            transform: translateY(-3px);
-        }
-
-        .btn-back {
-            margin-top: 40px;
-            display: inline-block;
-        }
-    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Bruvi</h1>
-        <p>Premium single-serve coffee system reimagined for taste and sustainability.</p>
+        <div class="row" style="padding: 0px 40px; padding-top: 20px;">
+            <p class="headline">Bruvi</p>
+            <a href="https://bruvi.com" target="_blank" class="primaryButton">Visit Website →</a>
+        </div>
+        <img class="bannerImage" src="1.png" alt="Bruvi Homepage" style="width: 100%; object-fit: cover;"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/7c9aff?text=Bruvi+Preview';">
     </header>
+
+
+
 
     <div class="content">
 
-        <div class="overview">
-            <img src="2.png" alt="Bruvi Homepage">
-            <div class="overview-text">
-                <h2>Project Overview</h2>
-                <p>Bruvi is a premium coffee brand reinventing the single-serve experience with B-Pods that deliver
-                    superior taste and are more eco-friendly. I built a high-conversion Shopify Plus store with
-                    integrated subscription functionality, custom product bundling, and a refined UI that reflects their
-                    modern, sustainable brand identity.</p>
-                <div style="margin-top: 25px;">
-                    <a class="btn" href="https://bruvi.com" target="_blank">Visit Website</a>
+
+
+
+        <!--Tech Stack & Tools-->
+        <div class="section">
+            <h2>Tech Stack & Tools</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>Shopify Plus</h6>
+                </div>
+                <div class="card">
+                    <h6>Liquid</h6>
+                </div>
+                <div class="card">
+                    <h6>JavaScript</h6>
+                </div>
+                <div class="card">
+                    <h6>GraphQL</h6>
+                </div>
+            </div>
+            <p>
+                Bruvi is built on Shopify Plus with a fully customized Liquid theme. The store leverages Shopify's
+                Subscription API for recurring B-Pod deliveries, GraphQL for efficient data queries, and custom
+                JavaScript for interactive product bundling. The front-end uses HTML/CSS for responsive layouts,
+                ensuring a premium coffee shopping experience across all devices.
+            </p>
+        </div>
+        <!--My Role-->
+        <div class="row section">
+            <div>
+                <h2>My Role</h2>
+                <p>
+                    As the lead Shopify developer for this project, I handled end-to-end store development. I consulted
+                    directly with the Bruvi team to understand their subscription-based business model and
+                    sustainability goals, then translated that into a high-conversion Shopify Plus store. I architected
+                    the custom theme structure, designed the user interface with a focus on premium aesthetics, and
+                    implemented subscription logic for recurring B-Pod deliveries.
+                </p>
+                <p>
+                    I also integrated product bundling features (starter kits, variety packs, machine + pods), optimized
+                    the checkout flow, and added an interactive product comparison tool for coffee machines. My role
+                    covered custom theme architecture, subscription integration, product bundling logic, checkout
+                    optimization, and third-party app integrations to enhance the customer journey from discovery to
+                    repeat purchase.
+                </p>
+            </div>
+            <div>
+                <img src="../../../../../images/myrole.png" alt="role dashboard Bruvi"
+                    style="width: 100%; height: auto;" class="imageCard"
+                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/7c9aff?text=My+Role+Overview';">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Client Review on Workana</h2>
+            <a href="rating.png" target="_blank">
+                <img src="rating.png" alt="Client rating" style="width: 100%; height: auto;" class="imageCard popup"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x600/101826/7c9aff?text=Client+Review+Preview';">
+            </a>
+        </div>
+
+
+        <div class="section">
+            <h2>Complete Case Study</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>+30%</h3>
+                    <p>Increase in subscription sign-ups compared to previous platform</p>
+                </div>
+
+                <div class="card">
+                    <h3>+ Retention</h3>
+                    <p>Customer retention improved with seamless reorder system</p>
+                </div>
+
+                <div class="card">
+                    <h3>Sustainable</h3>
+                    <p>Eco-friendly UI highlighting Bruvi's sustainability initiatives</p>
+                </div>
+
+                <div class="card">
+                    <h3>Premium UX</h3>
+                    <p>Modern design reinforcing Bruvi as an innovative coffee brand</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>Bruvi is a premium coffee brand reinventing the single-serve experience with B-Pods that deliver
+                        superior taste and are more eco-friendly. I built a high-conversion Shopify Plus store with
+                        integrated subscription functionality, custom product bundling, and a refined UI that reflects
+                        their modern, sustainable brand identity.</p>
+
+                    <p>The client needed a robust e-commerce solution that could handle recurring subscriptions, product
+                        bundles, and an interactive comparison tool for their coffee machines. I built a fully
+                        customized Shopify Plus store from the ground up — including custom theme architecture,
+                        subscription integration, product bundling logic, checkout optimization, and third-party app
+                        integrations to enhance the customer journey.</p>
+
+                    <p>The main challenge was implementing a flexible subscription system that allowed customers to
+                        customize delivery frequency, pod quantities, and flavors. I leveraged Shopify's Subscription
+                        API and built custom Liquid components to manage customer preferences. Another challenge was
+                        optimizing the bundle builder for speed — solved by asynchronous loading and efficient state
+                        management.</p>
+
+                    <p>After deploying the store, Bruvi achieved a 30% increase in subscription sign-ups compared to
+                        their previous platform. Customer retention improved due to the seamless reorder system, and the
+                        site's modern design reinforced Bruvi's position as a premium, innovative coffee brand. The
+                        interactive product comparison tool helped customers make informed purchasing decisions,
+                        reducing return rates and increasing average order value.</p>
+                </div>
+                <div class="card" style="padding: 5px;">
+                    <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
+                        <img src="1.png" style="width: 100%; padding-top: 5px;">
+                        <img src="2.png" style="width: 100%; padding-top: 5px;">
+                        <img src="3.png" style="width: 100%; padding-top: 5px;">
+                        <img src="4.png" style="width: 100%; padding-top: 5px;">
+                        <img src="5.png" style="width: 100%; padding-top: 5px;">
+                    </div>
+                    <p style="text-align: center;">Walkthrough</p>
                 </div>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Your Role</h2>
-            <p>I led the Shopify store development — including custom theme architecture, subscription integration,
-                product bundling logic, checkout optimization, and third-party app integrations to enhance the customer
-                journey from discovery to repeat purchase.</p>
-        </div>
 
+        <!-- Features section (organized as grid cards) -->
         <div class="section">
-            <h2>Features</h2>
-            <ul>
-                <li>Custom Shopify Plus theme with premium brand aesthetics</li>
-                <li>Recurring subscription system for B-Pod deliveries</li>
-                <li>Product bundling (starter kits, variety packs, machine + pods)</li>
-                <li>Seamless checkout experience with one-click reorder</li>
-                <li>Interactive product comparison tool for coffee machines</li>
-                <li>Sustainability-focused UI highlighting eco-friendly initiatives</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Tech Stack</h2>
-            <div class="tech-list">
-                <span>Shopify Plus</span>
-                <span>Liquid</span>
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Subscription API</span>
-                <span>GraphQL</span>
+            <h2>Store Features and Highlights</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>Custom Theme</h6>
+                    <p>Shopify Plus theme with premium brand aesthetics</p>
+                </div>
+                <div class="card">
+                    <h6>Subscription System</h6>
+                    <p>Recurring B-Pod deliveries with customizable frequency</p>
+                </div>
+                <div class="card">
+                    <h6>Product Bundling</h6>
+                    <p>Starter kits, variety packs, machine and pods bundles</p>
+                </div>
+                <div class="card">
+                    <h6>One-Click Reorder</h6>
+                    <p>Seamless checkout experience for repeat customers</p>
+                </div>
+                <div class="card">
+                    <h6>Comparison Tool</h6>
+                    <p>Interactive product comparison for coffee machines</p>
+                </div>
+                <div class="card">
+                    <h6>Sustainability UI</h6>
+                    <p>Design highlighting eco-friendly initiatives</p>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Challenges & Solutions</h2>
-            <p>The main challenge was implementing a flexible subscription system that allowed customers to customize
-                delivery frequency, pod quantities, and flavors. I leveraged Shopify's Subscription API and built custom
-                Liquid components to manage customer preferences. Another challenge was optimizing the bundle builder
-                for speed — solved by asynchronous loading and efficient state management.</p>
-        </div>
-
-        <div class="section">
-            <h2>Visual Preview</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="3.png" alt="Product Collection Page">
-                    <figcaption>Product Showcase</figcaption>
-                </figure>
-                <figure>
-                    <img src="4.png" alt="Product Detail Page">
-                    <figcaption>Subscription Checkout Flow</figcaption>
-                </figure>
-                <figure>
-                    <img src="5.png" alt="Mobile Responsive View">
-                    <figcaption>Mobile Shopping Experience</figcaption>
-                </figure>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Results & Impact</h2>
-            <p>The Bruvi store launched with a 30% increase in subscription sign-ups compared to their previous
-                platform. Customer retention improved due to the seamless reorder system, and the site's modern design
-                reinforced Bruvi's position as a premium, innovative coffee brand.</p>
-        </div>
-
+        <!-- Future Improvements section -->
         <div class="section">
             <h2>Future Improvements</h2>
-            <p>Future updates include AI-powered flavor recommendations based on purchase history, a loyalty rewards
-                program, and integration with smart coffee machines for automated reordering.</p>
+            <div class="grid">
+                <div class="card">
+                    <h6>AI Flavor Recommendations</h6>
+                    <p>Personalized pod suggestions based on purchase history</p>
+                </div>
+                <div class="card">
+                    <h6>Loyalty Rewards Program</h6>
+                    <p>Points system for repeat coffee purchases</p>
+                </div>
+                <div class="card">
+                    <h6>Smart Machine Integration</h6>
+                    <p>Automated reordering from connected coffee machines</p>
+                </div>
+                <div class="card">
+                    <h6>Subscription Analytics</h6>
+                    <p>Enhanced tracking of retention and churn metrics</p>
+                </div>
+            </div>
+            <p style="margin-top: 16px;">Future updates include AI-powered flavor recommendations based on purchase
+                history, a loyalty rewards program, and integration with smart coffee machines for automated reordering
+                when pod levels run low.</p>
         </div>
 
-        <a href="../../../../../../index.html" class="btn btn-back">← Back to Portfolio</a>
 
     </div>
 

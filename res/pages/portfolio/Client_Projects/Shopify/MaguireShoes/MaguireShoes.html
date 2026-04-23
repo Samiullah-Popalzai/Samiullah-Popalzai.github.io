@@ -3,285 +3,217 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maguire Shoes - Shopify Store Project</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0b0f17;
-            --bg-soft: #0f1420;
-            --text: #e8eefc;
-            --muted: #9cb3d9;
-            --brand: #7c9aff;
-            --ok: #22c55e;
-            --warn: #f59e0b;
-            --danger: #ef4444;
-            --ring: rgba(124, 154, 255, .35);
-            --card: #101826;
-            --chip: #0c1322;
-            --border: #1b263b;
-            --shadow: 0 10px 30px rgba(0, 0, 0, .35);
-            --radius: 18px;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Maguire Shoes · Premium Footwear Shopify Store | Case Study</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+    <!-- Google Fonts + The Great War Design System -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../../style.css">
 
-        body {
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: var(--card);
-            color: var(--text);
-            border-radius: var(--radius);
-            margin-bottom: 50px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            color: var(--muted);
-        }
-
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: var(--card);
-            padding: 40px;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            color: var(--brand);
-            margin-bottom: 15px;
-            border-left: 6px solid var(--brand);
-            padding-left: 12px;
-        }
-
-        .section p,
-        .section ul {
-            text-align: justify;
-            font-size: 1rem;
-            color: var(--muted);
-        }
-
-        ul {
-            padding-left: 20px;
-            list-style: disc;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        .overview {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .overview img {
-            flex: 1;
-            min-width: 320px;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .overview-text {
-            flex: 1;
-            min-width: 320px;
-        }
-
-        .tech-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .tech-list span {
-            background: var(--chip);
-            color: var(--muted);
-            padding: 8px 14px;
-            border-radius: 10px;
-            font-size: .95rem;
-            font-weight: 500;
-            border: 1px solid var(--border);
-        }
-
-        .gallery {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .gallery figure {
-            text-align: center;
-            flex: 1 1 30%;
-        }
-
-        .gallery img {
-            width: 100%;
-            max-width: 260px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-        }
-
-        .gallery figcaption {
-            margin-top: 8px;
-            font-size: .9rem;
-            color: var(--muted);
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--brand);
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: .3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-            transform: translateY(-3px);
-        }
-
-        .btn-back {
-            margin-top: 40px;
-            display: inline-block;
-        }
-    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Maguire Shoes</h1>
-        <p>Timeless footwear defined by European craftsmanship and transparent values.</p>
+        <div class="row" style="padding: 0px 40px; padding-top: 20px;">
+            <p class="headline">Maguire Shoes</p>
+            <a href="https://maguireshoes.com" target="_blank" class="primaryButton">Visit Website →</a>
+        </div>
+        <img class="bannerImage" src="1.png" alt="Maguire Shoes Homepage" style="width: 100%; object-fit: cover;"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/7c9aff?text=Maguire+Shoes+Preview';">
     </header>
+
+
+
 
     <div class="content">
 
-        <div class="overview">
-            <img src="2.png" alt="Maguire Shoes Homepage">
-            <div class="overview-text">
-                <h2>Project Overview</h2>
-                <p>Maguire Shoes is a footwear brand built on timeless designs, European craftsmanship, and transparent
-                    values. I developed a custom Shopify theme that highlights their commitment to quality leather shoes
-                    and accessories, creating a seamless shopping experience that reflects their sophisticated brand
-                    identity.</p>
-                <div style="margin-top: 25px;">
-                    <a class="btn" href="https://maguireshoes.com" target="_blank">Visit Website</a>
+
+
+
+        <!--Tech Stack & Tools-->
+        <div class="section">
+            <h2>Tech Stack & Tools</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>Shopify</h6>
+                </div>
+                <div class="card">
+                    <h6>Liquid</h6>
+                </div>
+                <div class="card">
+                    <h6>HTML/CSS/JS</h6>
+                </div>
+                <div class="card">
+                    <h6>Shopify Admin API</h6>
+                </div>
+            </div>
+            <p>
+                Maguire Shoes is built on a fully customized Shopify foundation using Liquid templating for dynamic
+                content rendering. The store integrates custom product galleries, size guide widgets, and customer
+                review sections. HTML/CSS and JavaScript power the responsive layout, smooth animations, and interactive
+                elements, while Shopify Admin API handles real-time inventory and collection sync across boots, loafers,
+                oxfords, and accessories.
+            </p>
+        </div>
+        <!--My Role-->
+        <div class="row section">
+            <div>
+                <h2>My Role</h2>
+                <p>
+                    As the sole developer and designer for this project, I handled end-to-end delivery. I consulted
+                    directly with the Maguire team to understand their brand identity — timeless designs, European
+                    craftsmanship, and transparent values — then translated that into a fully customized Shopify store.
+                    I architected the theme structure, designed the user interface with a focus on premium aesthetics
+                    and fast loading, and implemented product page optimizations for high-resolution shoe galleries.
+                </p>
+                <p>
+                    I also integrated essential e-commerce features: size guides, customer review sections, SEO
+                    optimization, and collection organization. I optimized theme assets, implemented lazy loading for
+                    product images, and fine-tuned responsive layouts using CSS Grid and Flexbox. My role covered theme
+                    customization, product page setup, collection organization, responsive adjustments, and post-launch
+                    performance monitoring.
+                </p>
+            </div>
+            <div>
+                <img src="../../../../../images/myrole.png" alt="role dashboard Maguire Shoes"
+                    style="width: 100%; height: auto;" class="imageCard"
+                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/7c9aff?text=My+Role+Overview';">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Client Review on Whatsapp</h2>
+            <a href="rating.png" target="_blank">
+                <img src="rating.png" alt="Client rating" style="width: 100%; height: auto;" class="imageCard popup"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x600/101826/7c9aff?text=Client+Review+Preview';">
+            </a>
+        </div>
+
+
+        <div class="section">
+            <h2>Complete Case Study</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>+35%</h3>
+                    <p>User engagement after launch — improved navigation and checkout flow</p>
+                </div>
+
+                <div class="card">
+                    <h3>2.5x</h3>
+                    <p>Faster page load speed via lazy loading and asset optimization</p>
+                </div>
+
+                <div class="card">
+                    <h3>+ Retention</h3>
+                    <p>Customer retention improved with size guides and product reviews</p>
+                </div>
+
+                <div class="card">
+                    <h3>100%</h3>
+                    <p>Responsive design — flawless on mobile, tablet and desktop</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>Maguire Shoes is a footwear brand built on timeless designs, European craftsmanship, and
+                        transparent values. I developed a custom Shopify theme that highlights their commitment to
+                        quality leather shoes and accessories, creating a seamless shopping experience that reflects
+                        their sophisticated brand identity. The store features collections including boots, loafers,
+                        oxfords, and accessories, each presented with high-resolution imagery and detailed product
+                        information.</p>
+
+                    <p>The client needed a premium online presence that would convey heritage craftsmanship while
+                        offering modern e-commerce functionality. I built a fully customized Shopify store from the
+                        ground up — including theme customization, product page optimization, collection organization,
+                        responsive layout adjustments, and integration of essential features like size guides, customer
+                        reviews, and SEO optimization.</p>
+
+                    <p>One key challenge was presenting high-resolution product images without compromising site speed.
+                        I implemented lazy loading and optimized image compression, reducing load times significantly
+                        while preserving visual quality. Additionally, creating a consistent brand experience across
+                        device sizes required careful responsive adjustments using CSS Grid and Flexbox, ensuring the
+                        elegant design remained intact on all screens.</p>
+
+                    <p>After deploying the store, Maguire Shoes achieved a modern, cohesive look that aligned perfectly
+                        with their brand identity. Site speed improved by over 2.5x compared to their previous setup,
+                        and user engagement metrics increased notably. The intuitive product navigation, smooth checkout
+                        experience, and integrated customer reviews contributed to increased customer retention and
+                        sales. The client can now easily manage collections, products, and promotions through the
+                        familiar Shopify admin panel.</p>
+                </div>
+                <div class="card" style="padding: 5px;">
+                    <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
+                        <img src="1.png" style="width: 100%; padding-top: 5px;">
+                        <img src="2.png" style="width: 100%; padding-top: 5px;">
+                        <img src="3.png" style="width: 100%; padding-top: 5px;">
+                        <img src="4.png" style="width: 100%; padding-top: 5px;">
+                        <img src="5.png" style="width: 100%; padding-top: 5px;">
+                    </div>
+                    <p style="text-align: center;">Walkthrough</p>
                 </div>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Your Role</h2>
-            <p>I was responsible for the complete design and development of the Shopify store — including theme
-                customization, product page optimization, collection organization, responsive layout adjustments, and
-                integration of essential e-commerce features to enhance user experience and conversion rate.</p>
-        </div>
 
+        <!-- Features section (organized as grid cards) -->
         <div class="section">
-            <h2>Features</h2>
-            <ul>
-                <li>Custom-designed Shopify theme reflecting premium footwear brand aesthetics</li>
-                <li>Optimized product galleries showcasing shoe details from multiple angles</li>
-                <li>Seamless navigation across collections (boots, loafers, oxfords, accessories)</li>
-                <li>Responsive design for flawless browsing on mobile, tablet, and desktop</li>
-                <li>SEO optimization and fast page loading speed</li>
-                <li>Integrated size guide and customer review sections</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Tech Stack</h2>
-            <div class="tech-list">
-                <span>Shopify</span>
-                <span>Liquid</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Shopify Admin API</span>
+            <h2>Store Features and Highlights</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>Custom Theme</h6>
+                    <p>Shopify theme tailored to premium footwear aesthetics</p>
+                </div>
+                <div class="card">
+                    <h6>Optimized Galleries</h6>
+                    <p>Multi-angle product images with zoom and quick-view</p>
+                </div>
+                <div class="card">
+                    <h6>Fully Responsive</h6>
+                    <p>Flawless experience across mobile, tablet, desktop</p>
+                </div>
+                <div class="card">
+                    <h6>Size Guide</h6>
+                    <p>Integrated sizing chart to reduce returns</p>
+                </div>
+                <div class="card">
+                    <h6>Customer Reviews</h6>
+                    <p>Social proof and user-generated content integration</p>
+                </div>
+                <div class="card">
+                    <h6>SEO Ready</h6>
+                    <p>Meta tags, structured data, fast page loads</p>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Challenges & Solutions</h2>
-            <p>A key challenge was presenting high-resolution product images without compromising site speed. I
-                implemented lazy loading and optimized image compression. Additionally, creating a consistent brand
-                experience across device sizes required careful responsive adjustments using CSS Grid and Flexbox,
-                ensuring the elegant design remained intact on all screens.</p>
-        </div>
-
-        <div class="section">
-            <h2>Visual Preview</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="3.png" alt="Product Collection Page">
-                    <figcaption>Collection Page</figcaption>
-                </figure>
-                <figure>
-                    <img src="4.png" alt="Product Detail Page">
-                    <figcaption>Product Detail Page</figcaption>
-                </figure>
-                <figure>
-                    <img src="5.png" alt="Mobile Responsive View">
-                    <figcaption>Mobile Shopping Experience</figcaption>
-                </figure>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Results & Impact</h2>
-            <p>The final store delivered a premium, cohesive look that aligned perfectly with Maguire's brand identity.
-                Site speed and user engagement improved notably after launch. The intuitive product navigation and
-                smooth checkout experience contributed to increased customer retention and sales.</p>
-        </div>
-
+        <!-- Future Improvements section -->
         <div class="section">
             <h2>Future Improvements</h2>
-            <p>Planned enhancements include integrating AI-based product recommendations, implementing a loyalty rewards
-                program, and expanding the store with a style blog and lookbook sections.</p>
+            <div class="grid">
+                <div class="card">
+                    <h6>AI Recommendations</h6>
+                    <p>Personalized product suggestions based on browsing history</p>
+                </div>
+                <div class="card">
+                    <h6>Loyalty Program</h6>
+                    <p>Rewards system for repeat customers</p>
+                </div>
+                <div class="card">
+                    <h6>Style Blog</h6>
+                    <p>Content marketing to drive organic traffic</p>
+                </div>
+                <div class="card">
+                    <h6>Lookbook Gallery</h6>
+                    <p>Curated outfit inspiration for each shoe collection</p>
+                </div>
+            </div>
+            <p style="margin-top: 16px;">Planned enhancements include integrating AI-based product recommendations,
+                implementing a loyalty rewards program, and expanding the store with a style blog and lookbook sections
+                to further engage customers and increase average order value.</p>
         </div>
 
-        <a href="../../../../../../index.html" class="btn btn-back">← Back to Portfolio</a>
+
 
     </div>
 
