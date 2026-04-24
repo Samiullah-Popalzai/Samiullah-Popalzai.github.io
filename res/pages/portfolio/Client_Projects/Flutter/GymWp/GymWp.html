@@ -10,33 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../../../../style.css">
 
-  <style>
-    /* Additional inline styles for missing images/videos - replace with actual assets */
-    .placeholder-video {
-      background: linear-gradient(135deg, #1a1f2e, #0f1420);
-      border-radius: 24px;
-      width: 100%;
-      aspect-ratio: 16/9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #7c9aff;
-      font-size: 0.9rem;
-      border: 1px solid #1b263b;
-    }
-    .placeholder-img {
-      background: linear-gradient(135deg, #1a1f2e, #0f1420);
-      border-radius: 20px;
-      width: 100%;
-      aspect-ratio: 4/3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #7c9aff;
-      font-size: 0.8rem;
-      border: 1px solid #1b263b;
-    }
-  </style>
 </head>
 
 <body>
@@ -44,14 +17,15 @@
   <header>
     <div class="row" style="padding: 0px 40px; padding-top: 20px;">
       <p class="headline">Gym WP · Workout Tracker & Log</p>
-      <a href="https://play.google.com/store/apps/details?id=fitness.online.app" target="_blank" class="primaryButton">Google Play →</a>
+      <div>
+        <a href="https://github.com/Samiullah-Popalzai/Gym-WP-Workout-Fitness-Planner" target="_blank"
+          class="backButton">Github Repo →</a>
+        <a href="https://play.google.com/store/apps/details?id=fitness.online.app" target="_blank"
+          class="primaryButton">Google Play →</a>
+      </div>
     </div>
-    <!-- Replace with actual demo video of the app -->
-    <video class="bannerImage" autoplay muted loop playsinline controls poster="app_poster.png">
-      <source src="gymwp_demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      <div class="placeholder-video">▶️ App Demo Video (add gymwp_demo.mp4)</div>
-    </video>
+    <img class="bannerImage" src="featured.png" alt="app preview" style="width: 100%; object-fit: cover;"
+      onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/7c9aff?text=App+Preview';">
   </header>
 
   <div class="content">
@@ -60,15 +34,33 @@
     <div class="section">
       <h2>Tech Stack & Tools</h2>
       <div class="grid">
-        <div class="card"><h6>Flutter</h6></div>
-        <div class="card"><h6>Dart</h6></div>
-        <div class="card"><h6>Provider</h6></div>
-        <div class="card"><h6>SQLite</h6></div>
-        <div class="card"><h6>SharedPreferences</h6></div>
-        <div class="card"><h6>FL Chart</h6></div>
-        <div class="card"><h6>animate_do</h6></div>
-        <div class="card"><h6>OpenAI API</h6></div>
-        <div class="card"><h6>Google Fonts</h6></div>
+        <div class="card">
+          <h6>Flutter</h6>
+        </div>
+        <div class="card">
+          <h6>Dart</h6>
+        </div>
+        <div class="card">
+          <h6>Provider</h6>
+        </div>
+        <div class="card">
+          <h6>SQLite</h6>
+        </div>
+        <div class="card">
+          <h6>SharedPreferences</h6>
+        </div>
+        <div class="card">
+          <h6>FL Chart</h6>
+        </div>
+        <div class="card">
+          <h6>animate_do</h6>
+        </div>
+        <div class="card">
+          <h6>OpenAI API</h6>
+        </div>
+        <div class="card">
+          <h6>Google Fonts</h6>
+        </div>
       </div>
       <p>
         Gym WP is a full-featured Flutter fitness application built for a client and published on Google Play. The app
@@ -101,108 +93,85 @@
         </p>
       </div>
       <div>
-        <!-- Replace with actual screenshot of the app dashboard -->
-        <div class="placeholder-img">📱 App Dashboard Screenshot<br>(add gymwp_dashboard.png)</div>
+        <img src="../../../../../images/myrole.png" alt="role dashboard Bruvi" style="width: 100%; height: auto;"
+          class="imageCard"
+          onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/7c9aff?text=My+Role+Overview';">
       </div>
     </div>
 
-    <!--Client Review / Project Status-->
     <div class="section">
-      <h2>Project Status</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>✅ Published</h3>
-          <p>Live on Google Play — available for download</p>
-        </div>
-        <div class="card">
-          <h3>🔒 Private Code</h3>
-          <p>Client credentials removed — not publicly reusable</p>
-        </div>
-        <div class="card">
-          <h3>👨‍💻 Full Stack</h3>
-          <p>UI + logic + AI + Play Store deployment</p>
-        </div>
-      </div>
-      <a href="playstore_listing.png" target="_blank">
-        <!-- Replace with actual Play Store screenshot or rating -->
-        <div class="placeholder-img" style="margin-top: 16px;">📱 Google Play Listing Screenshot<br>(add playstore_listing.png)</div>
+      <h2>Client Review on Upwork</h2>
+      <a href="rating.png" target="_blank">
+        <img src="rating.png" alt="Client rating" style="width: 100%; height: auto;" class="imageCard popup">
       </a>
     </div>
 
-    <!--Key Metrics / Case Study Highlights-->
     <div class="section">
-      <h2>Core Impact & Features</h2>
+      <h2>Complete Case Study</h2>
       <div class="grid">
         <div class="card">
-          <h3>Workout Plans</h3>
-          <p>Create custom workouts with exercises, sets, reps, and weights</p>
+          <h3>200+</h3>
+          <p>Free 3D exercises with proper form visualization</p>
         </div>
+
         <div class="card">
-          <h3>Session Logging</h3>
-          <p>Track every workout with start/complete session functionality</p>
+          <h3>15+</h3>
+          <p>Targeted muscle groups including chest, arms, abs, full body</p>
         </div>
+
         <div class="card">
-          <h3>Progress Analytics</h3>
-          <p>Weekly/monthly stats with visual charts and achievements</p>
+          <h3>6</h3>
+          <p>Fitness goals supported - weight loss, muscle gain, 6-pack abs, fat burning, conditioning, bodyweight</p>
         </div>
+
         <div class="card">
-          <h3>🤖 AI Coach</h3>
-          <p>GPT-3.5-turbo powered assistant — personalized fitness coaching</p>
-        </div>
-        <div class="card">
-          <h3>Body Metrics</h3>
-          <p>Weight, height, BMI tracking with goal setting</p>
-        </div>
-        <div class="card">
-          <h3>Exercise Library</h3>
-          <p>Structured collection of exercises with form guidance</p>
+          <h3>2x</h3>
+          <p>User engagement improvement with community features and Q&A forum</p>
         </div>
       </div>
-
       <div class="row">
         <div>
-          <p><strong>What the app is:</strong> A Flutter fitness tracking application built for a client and published on
-            Google Play. It helps users build muscle, lose weight, and gain strength through structured workout
-            tracking and progress monitoring. The app solves the problem of inconsistent gym logging by providing an
-            intuitive interface that makes recording sets, reps, and weights effortless.</p>
+          <p>The Fitness App: Gym Workout Plan is a comprehensive fitness tracking application built for a client whom I
+            connected with through Workana. Whether you are trying to lose weight, gain muscle mass or want to have
+            well-defined 6-pack abs – our gym planner fitness app offers full body workout plans with many free 3D
+            exercises, to help users achieve their body goals. Users can choose from a variety of exercise plans
+            targeted at specific muscle groups, such as chest workout, upper body workout, abs workout (stomach
+            workout), arm workout and full body workout at home, or tailor them to a certain goal, such as fat burning
+            workouts, conditioning workouts, or bodyweight workouts.</p>
 
-          <p><strong>Workout System in detail:</strong> Users can create unlimited custom workouts, add exercises with
-            sets, reps, and weights, attach notes to any exercise, and start/complete workout sessions. All data is
-            stored locally in SQLite, ensuring privacy and offline functionality. The session logger tracks duration
-            and provides real-time feedback during workouts.</p>
+          <p>The client needed a comprehensive mobile solution that could deliver structured workout plans, track user
+            progress, and build a fitness community. I built a fully customized cross-platform mobile application using
+            React Native - including 3D exercise visualizations, workout planner with progress tracking, community Q&A
+            forum, personal coach matching system, and integrated diet plans to enhance the fitness journey.</p>
 
-          <p><strong>AI Feature breakdown:</strong> The integrated AI fitness assistant uses OpenAI's GPT-3.5-turbo to
-            deliver personalized coaching. It analyzes workout history to identify strengths and areas for improvement,
-            provides workout recommendations based on past performance, offers nutrition and motivation guidance, and
-            maintains conversation history for context-aware advice. Users can ask anything from "how to break a
-            plateau" to "what should I eat post-workout."</p>
+          <p>The main challenge was implementing interactive 3D exercise models that users could rotate and zoom to
+            understand proper form. I integrated Three.js to create smooth, performant 3D visualizations that work
+            across both iOS and Android devices. Another challenge was building the real-time community features
+            including member profiles, Q&A forums, and coach matching - solved using Socket.io for instant messaging and
+            MongoDB for scalable data storage. Additionally, implementing gender-specific workout routines (men's and
+            women's optimized exercises) required careful database structuring and filtering logic.</p>
 
-          <p><strong>Progress Tracking System:</strong> The app includes weekly and monthly stats dashboards with FL
-            Chart visualizations. Users can track weight trends, volume progress, and exercise-specific improvements.
-            An achievement system gamifies consistency, rewarding users for streaks and milestones. The profile system
-            allows users to set fitness goals (build muscle, lose weight, gain strength) and tracks BMI automatically
-            from height/weight inputs.</p>
-
-          <p><strong>Technical Architecture:</strong> The project follows a clean structure with separate folders for
-            models (User, Workout, Exercise), providers (UserProvider, WorkoutProvider), screens (Home, Workout,
-            Progress, Profile), widgets (WorkoutCard, StatsCard), and services (StorageService). This modular approach
-            ensures maintainability and scalability. The OpenAI integration uses the HTTP package with secure API key
-            handling (removed in public references).</p>
+          <p>After deploying the Fitness App, users eliminated the need for expensive personal trainers or confusing
+            workout plans. What used to be inconsistent gym sessions with unclear progress is now structured, trackable
+            workouts with 3D form guidance. Users receive a modern, interactive digital fitness companion instead of
+            static PDF plans or random YouTube videos, which improved their engagement and results. The app's community
+            features allow members to meet other fitness enthusiasts, log their workouts (beginner workout, gym stomach
+            workout or abs home workout), ask questions, and receive competent answers from both coaches and peers. The
+            client reported increased user retention and positive feedback on the 3D exercise library. This cardio
+            workout app is now recognized as one of the best workout apps for men and free workout apps for women, as it
+            allows users to select a gym routine for men or a gym routine for women. Keep fit at home or at the gym with
+            the online community of this strength training app.</p>
         </div>
         <div class="card" style="padding: 5px;">
-          <div class="scrollable popup" style="flex: 1; height: 600px; overflow-y: auto; padding: 10px;">
-            <!-- Replace with actual app screenshots - add 0.jpg through 8.jpg -->
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Workout Screen<br>(add 0.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Progress Charts<br>(add 1.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 AI Coach Chat<br>(add 2.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Exercise Library<br>(add 3.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Profile & Metrics<br>(add 4.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Workout Creation<br>(add 5.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Session Logger<br>(add 6.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Statistics Dashboard<br>(add 7.jpg)</div>
-            <div class="placeholder-img" style="margin-bottom: 10px;">📱 Settings<br>(add 8.jpg)</div>
+          <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
+            <img src="1.png" style="width: 100%; padding-top: 5px;">
+            <img src="2.png" style="width: 100%; padding-top: 5px;">
+            <img src="3.png" style="width: 100%; padding-top: 5px;">
+            <img src="4.png" style="width: 100%; padding-top: 5px;">
+            <img src="5.png" style="width: 100%; padding-top: 5px;">
+            <img src="6.png" style="width: 100%; padding-top: 5px;">
           </div>
-          <p style="text-align: center;">App Walkthrough → add screenshots 0.jpg to 8.jpg</p>
+          <p style="text-align: center;">Walkthrough</p>
         </div>
       </div>
     </div>
@@ -237,14 +206,7 @@
           entire development cycle took approximately 6 weeks from initial consultation to Play Store launch.
         </p>
       </div>
-      <div>
-        <!-- Replace with actual build process video or demo -->
-        <video class="bannerImage" controls preload="metadata" poster="how_i_built_poster.png">
-          <source src="how_i_built_gymwp.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          <div class="placeholder-video">🎬 How I Built It (add how_i_built_gymwp.mp4)</div>
-        </video>
-      </div>
+
     </div>
 
   </div>
