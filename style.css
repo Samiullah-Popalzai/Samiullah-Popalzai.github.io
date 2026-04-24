@@ -198,15 +198,15 @@
     }
 
 
-    .scrollable::-webkit-scrollbar {
+    .scrollar::-webkit-scrollbar {
       width: 10px;
     }
 
-    .scrollable::-webkit-scrollbar-track {
+    .scrollar::-webkit-scrollbar-track {
       border-radius: 6px;
     }
 
-    .scrollable::-webkit-scrollbar-thumb {
+    .scrollar::-webkit-scrollbar-thumb {
       background: var(--primaryColor);
       border-radius: 10px;
     }
