@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Phopet · AI Pet Platform Laravel Case Study | AI Image Generation</title>
+
+    <!-- Google Fonts + The Great War Design System -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../../style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="row" style="padding: 0px 40px; padding-top: 20px;">
+            <p class="headline">Phopet: AI Pet Platform</p>
+            <a href="https://www.phopet.com/en" target="_blank" class="primaryButton">Visit Website →</a>
+        </div>
+        <img class="bannerImage" src="1.png" alt="Phopet AI Platform Homepage" style="width: 100%; object-fit: cover;"
+            onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/7c9aff?text=Phopet+AI+Platform+Preview';">
+    </header>
+
+
+
+
+    <div class="content">
+
+
+
+
+        <!--Tech Stack & Tools-->
+        <div class="section">
+            <h2>Tech Stack & Tools</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>PHP / Laravel</h6>
+                </div>
+                <div class="card">
+                    <h6>Nginx</h6>
+                </div>
+                <div class="card">
+                    <h6>JavaScript</h6>
+                </div>
+                <div class="card">
+                    <h6>MySQL / Redis</h6>
+                </div>
+                <div class="card">
+                    <h6>AI APIs</h6>
+                </div>
+            </div>
+            <p>
+                Phopet is built on a robust Laravel PHP backend running on Nginx server for high-performance request handling. The platform leverages Laravel's queue system for asynchronous AI model training (30-60 minutes), Eloquent ORM for user and credit management, and Redis for caching. JavaScript powers the dynamic upload interface, real-time training progress indicators, and interactive album selections. The AI image generation integrates with custom-trained models via secure API endpoints.
+            </p>
+        </div>
+        <!--My Role-->
+        <div class="row section">
+            <div>
+                <h2>My Role</h2>
+                <p>
+                    As the lead backend and full-stack developer for Phopet, I architected and built the entire Laravel application from the ground up. I designed the database schema for user accounts, credit systems, model training jobs, and generated image storage. I implemented the queue worker infrastructure to handle long-running AI training tasks without blocking the user interface, ensuring a smooth experience even during peak loads.
+                </p>
+                <p>
+                    I developed RESTful APIs for communication between the frontend JavaScript and the AI generation backend, integrated payment processing for one-time credit purchases, and built admin dashboards for monitoring system health. I also implemented automated cleanup jobs for inactive user data (60-90 days), email notifications via Laravel notifications, and optimized Nginx configuration for static asset delivery of generated pet images. My role covered backend architecture, API development, database design, AI service integration, and performance optimization.
+                </p>
+            </div>
+            <div>
+                <img src="../../../../../images/myrole.png" alt="Phopet backend dashboard"
+                    style="width: 100%; height: auto;" class="imageCard"
+                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/7c9aff?text=My+Role+-+Laravel+Backend+Architecture';">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Client Review</h2>
+            <a href="rating.png" target="_blank">
+                <img src="rating.png" alt="Client rating" style="width: 100%; height: auto;" class="imageCard popup"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x600/101826/7c9aff?text=Client+Review+5+Stars';">
+            </a>
+        </div>
+
+
+        <div class="section">
+            <h2>Complete Case Study</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>50+</h3>
+                    <p>AI-generated images per user from a single pet model training</p>
+                </div>
+
+                <div class="card">
+                    <h3>30-60 min</h3>
+                    <p>Asynchronous AI training via Laravel queues and Redis</p>
+                </div>
+
+                <div class="card">
+                    <h3>€9.90</h3>
+                    <p>Welcome pack pricing — one-time payment, no subscriptions</p>
+                </div>
+
+                <div class="card">
+                    <h3>90 days</h3>
+                    <p>Data retention policy for inactive user accounts</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>Phopet is an AI-powered platform that transforms ordinary pet photos into stunning, studio-quality artwork. Built exclusively for pets, the platform allows users to upload 10-20 photos of their furry friends to train a custom AI model. Once trained, users can generate images from over 40 themed albums (Superheroes, Travel, Studio, Dystopian) and even upscale them for high-resolution prints.</p>
+
+                    <p>The client needed a scalable, high-performance web application that could handle asynchronous AI model training, credit-based payments, and a seamless user experience. I built the platform using Laravel on Nginx, with a JavaScript frontend for dynamic interactions. The backend manages user authentication, credit purchases, queue jobs for AI training, and secure API integrations with the image generation service.</p>
+
+                    <p>One key challenge was handling the 30-60 minute AI training time without forcing users to wait on a loading screen. I implemented Laravel's queue system with Redis to process training jobs asynchronously, sending email notifications via Laravel Notifications when a model is ready. Another challenge was data cleanup — I built automated scheduled commands to permanently delete inactive user models and images after 90 days, keeping the database lean and compliant with privacy expectations.</p>
+
+                    <p>After launch, Phopet successfully processes hundreds of concurrent training jobs, with users receiving their generated images reliably. The one-time payment model (starting at €9.90 for 50 images) has proven attractive to pet owners who want quality results without subscription fatigue. The platform continues to scale, with additional albums and features being added regularly through the Laravel-based admin dashboard.</p>
+                </div>
+                <div class="card" style="padding: 5px;">
+                    <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
+                        <img src="full.jpeg" style="width: 100%; padding-top: 5px;">
+                        
+                    </div>
+                    <p style="text-align: center;">Platform Walkthrough</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features section (organized as grid cards) -->
+        <div class="section">
+            <h2>Platform Features and Highlights</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>AI Model Training</h6>
+                    <p>Custom pet model from 10-20 uploaded photos (30-60 min)</p>
+                </div>
+                <div class="card">
+                    <h6>40+ Themed Albums</h6>
+                    <p>Superheroes, Travel, Studio, Dystopian, and more</p>
+                </div>
+                <div class="card">
+                    <h6>Credit System</h6>
+                    <p>One-time payments, no subscriptions — buy credits as needed</p>
+                </div>
+                <div class="card">
+                    <h6>Image Upscaling</h6>
+                    <p>High-resolution enlargements for print-ready artwork</p>
+                </div>
+                <div class="card">
+                    <h6>Email Notifications</h6>
+                    <p>Real-time alerts when AI training completes</p>
+                </div>
+                <div class="card">
+                    <h6>Automated Cleanup</h6>
+                    <p>90-day inactivity policy — GDPR-aware data management</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Improvements section -->
+        <div class="section">
+            <h2>Future Improvements</h2>
+            <div class="grid">
+                <div class="card">
+                    <h6>Multi-Pet Models</h6>
+                    <p>Train and switch between models for multiple pets in one account</p>
+                </div>
+                <div class="card">
+                    <h6>Physical Merch Store</h6>
+                    <p>Direct print-on-demand integration for posters, mugs, phone cases</p>
+                </div>
+                <div class="card">
+                    <h6>Video Generation</h6>
+                    <p>Short AI-generated video clips of pets in animated scenes</p>
+                </div>
+                <div class="card">
+                    <h6>API for Partners</h6>
+                    <p>Whitelabel API for pet brands and veterinary clinics</p>
+                </div>
+            </div>
+            <p style="margin-top: 16px;">Planned enhancements include supporting multi-pet models within a single account, integrating with print-on-demand services for physical merchandise, expanding into AI video generation, and offering a whitelabel API for pet industry partners to embed Phopet's technology.</p>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
