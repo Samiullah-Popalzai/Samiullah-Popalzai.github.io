@@ -1,266 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Samiullah Popalzai — Portfolio Projects</title>
-  <meta name="description"
-    content="Portfolio projects by Samiullah Popalzai — Mobile Apps, Web Apps, and Backend Systems." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../../style.css">
-  <style>
-    :root {
-      --bg: #0b0f17;
-      --bg-soft: #0f1420;
-      --text: #e8eefc;
-      --muted: #9cb3d9;
-      --brand: #7c9aff;
-      --ok: #22c55e;
-      --warn: #f59e0b;
-      --danger: #ef4444;
-      --ring: rgba(124, 154, 255, .35);
-      --card: #101826;
-      --chip: #0c1322;
-      --border: #1b263b;
-      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
-      --radius: 18px;
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    html,
-    body {
-      height: 100%;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none
-    }
-
-    .container {
-      max-width: 1100px;
-      margin-inline: auto;
-      padding: 28px 20px 56px
-    }
-
-    h1 {
-      font-size: clamp(24px, 4vw, 36px);
-      margin: 22px 0 10px
-    }
-
-    .subtitle {
-      color: var(--muted);
-      margin: 0 0 24px
-    }
-
-    .grid {
-      display: grid;
-      gap: 14px
-    }
-
-    .grid.cols-2 {
-      grid-template-columns: repeat(2, 1fr)
-    }
-
-    @media (max-width:640px) {
-      .grid.cols-2 {
-        grid-template-columns: 1fr
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samiullah Popalzai — Portfolio Projects</title>
+    <meta
+      name="description"
+      content="Portfolio projects by Samiullah Popalzai — Mobile Apps, Web Apps, and Backend Systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <style>
+      :root {
+        --bg: #0b0f17;
+        --bg-soft: #0f1420;
+        --text: #e8eefc;
+        --muted: #9cb3d9;
+        --brand: #7c9aff;
+        --ok: #22c55e;
+        --warn: #f59e0b;
+        --danger: #ef4444;
+        --ring: rgba(124, 154, 255, 0.35);
+        --card: #101826;
+        --chip: #0c1322;
+        --border: #1b263b;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        --radius: 18px;
       }
-    }
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-bottom: 1px solid var(--border)
-    }
+      html,
+      body {
+        height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", sans-serif;
+      }
 
-    .card-content {
-      padding: 18px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 18px
-    }
+      .container {
+        max-width: 1100px;
+        margin-inline: auto;
+        padding: 28px 20px 56px;
+      }
 
-    .muted {
-      color: var(--muted);
-      text-align: justify;
-    }
+      h1 {
+        font-size: clamp(24px, 4vw, 36px);
+        margin: 22px 0 10px;
+      }
 
-    .badge {
-      display: inline-block;
-      margin-bottom: 8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--chip);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 12px
-    }
+      .subtitle {
+        color: var(--muted);
+        margin: 0 0 24px;
+      }
 
-    
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: var(--bg-soft);
-      color: var(--text);
-      cursor: pointer
-    }
+      .grid.cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-    .btn.primary {
-      background: var(--brand);
-      color: #fff;
-      border-color: transparent
-    }
+      @media (max-width: 640px) {
+        .grid.cols-2 {
+          grid-template-columns: 1fr;
+        }
+      }
 
-    .btn svg {
-      width: 18px;
-      height: 18px
-    }
-  </style>
-</head>
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+      }
 
-<body>
-  <div class="container">
-    <main>
-      <h1>Portfolio Projects</h1>
-      
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid var(--border);
+      }
 
+      .card-content {
+        padding: 18px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
 
-      <!-- Laravel Projects SECTION -->
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Laravel Projects I've Built
-        </h3>
-      </div>
-      <!-- Projects Section -->
-      <div class="grid cols-2">
+      .card h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
 
-        <!-- Phopet: AI Pet Platform -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Laravel/Phopet/1.png" alt="Phopet AI Platform"
-            style="object-fit: fill;height: 400px;" />
+      .muted {
+        color: var(--muted);
+        text-align: justify;
+      }
 
-          <div class="card-content">
-            <h3>Phopet: AI Pet Platform</h3>
+      .badge {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--chip);
+        border: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 12px;
+      }
 
-            <div>
-              <span class="badge">Web App</span>
-              <span class="badge">Laravel</span>
-              <span class="badge">Nginx</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">AI Image Generation</span>
-              <span class="badge">Pet Tech</span>
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: var(--bg-soft);
+        color: var(--text);
+        cursor: pointer;
+      }
+
+      .btn.primary {
+        background: var(--brand);
+        color: #fff;
+        border-color: transparent;
+      }
+
+      .btn svg {
+        width: 18px;
+        height: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <main>
+        <h1>Portfolio Projects</h1>
+
+        <!-- Laravel Projects SECTION -->
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Laravel Projects I've Built
+          </h3>
+        </div>
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          <!-- Phopet: AI Pet Platform -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Laravel/Phopet/1.png"
+              alt="Phopet AI Platform"
+              style="object-fit: fill; height: 400px"
+            />
+
+            <div class="card-content">
+              <h3>Phopet: AI Pet Platform</h3>
+
+              <div>
+                <span class="badge">Web App</span>
+                <span class="badge">Laravel</span>
+                <span class="badge">Nginx</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">AI Image Generation</span>
+                <span class="badge">Pet Tech</span>
+              </div>
+
+              <p class="muted">
+                An AI-powered platform that transforms pet photos into stunning
+                artwork. Built with Laravel PHP framework and Nginx server,
+                users upload their pet's images to train custom AI models, then
+                generate professional-quality photos from various themed albums.
+                The platform includes credit-based purchasing, automated model
+                training, and seamless digital downloads, creating a unique
+                experience for pet owners to create lasting memories.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Laravel/Phopet/Phopet.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+                <a class="btn" target="_blank" href="https://www.phopet.com/en">
+                  Live Site ->
+                </a>
+              </div>
             </div>
+          </article>
 
-            <p class="muted">
-              An AI-powered platform that transforms pet photos into stunning artwork. Built with Laravel PHP framework
-              and Nginx server, users upload their pet's images to train custom AI models, then generate
-              professional-quality photos from various themed albums. The platform includes credit-based purchasing,
-              automated model training, and seamless digital downloads, creating a unique experience for pet owners to
-              create lasting memories.
-            </p>
+          <!-- AnamNex: SaaS for Emergency Physicians with AI -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Laravel/AnamNex/1.png"
+              alt="AnamNex AI Medical Platform"
+              style="object-fit: fill; height: 400px"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://placehold.co/800x400/0f1420/4c9aff?text=AnamNex+ECG+AI+Platform';
+              "
+            />
 
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Laravel/Phopet/Phopet.html"
-                target="_blank">
-                Read More
-              </a>
-              <a class="btn" target="_blank" href="https://www.phopet.com/en">
-                Live Site ->
-              </a>
+            <div class="card-content">
+              <h3>AnamNex: AI-Powered Medical SaaS for Emergency Physicians</h3>
+
+              <div>
+                <span class="badge">Web App</span>
+                <span class="badge">Laravel</span>
+                <span class="badge">Nginx</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">AI ECG Analysis</span>
+                <span class="badge">Medical Imaging AI</span>
+                <span class="badge">Healthcare SaaS</span>
+              </div>
+
+              <p class="muted">
+                AnamNex is a complete medical SaaS platform developed to support
+                emergency physicians (plantonistas) using artificial
+                intelligence. Built with Laravel PHP framework on Nginx server,
+                the platform provides automated ECG interpretation from
+                technical files (.mat, .hea) and images, plus AI-powered
+                analysis of wounds, skin lesions, and dermatological conditions.
+                The system processes cardiac signals to detect arrhythmias and
+                generates structured clinical reports in under 30 seconds,
+                helping physicians make faster, more accurate diagnostic
+                decisions during emergency shifts.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Laravel/AnamNex/AnamNex.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+                <a class="btn" target="_blank" href="https://www.anamnex.net">
+                  Live Site ->
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <!-- AnamNex: SaaS for Emergency Physicians with AI -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Laravel/AnamNex/1.png" alt="AnamNex AI Medical Platform"
-            style="object-fit: fill;height: 400px;"
-            onerror="this.onerror=null; this.src='https://placehold.co/800x400/0f1420/4c9aff?text=AnamNex+ECG+AI+Platform';" />
+        <!--|--------------------------------------------------------->
+        <!--          SHOPIFY SECTION           -->
+        <!--|--------------------------------------------------------->
 
-          <div class="card-content">
-            <h3>AnamNex: AI-Powered Medical SaaS for Emergency Physicians</h3>
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Handpicked Shopify Stores I've Built
+          </h3>
+        </div>
 
-            <div>
-              <span class="badge">Web App</span>
-              <span class="badge">Laravel</span>
-              <span class="badge">Nginx</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">AI ECG Analysis</span>
-              <span class="badge">Medical Imaging AI</span>
-              <span class="badge">Healthcare SaaS</span>
-            </div>
-
-            <p class="muted">
-              AnamNex is a complete medical SaaS platform developed to support emergency physicians (plantonistas) using
-              artificial intelligence. Built with Laravel PHP framework on Nginx server, the platform provides automated
-              ECG interpretation from technical files (.mat, .hea) and images, plus AI-powered analysis of wounds, skin
-              lesions, and dermatological conditions. The system processes cardiac signals to detect arrhythmias and
-              generates structured clinical reports in under 30 seconds, helping physicians make faster, more accurate
-              diagnostic decisions during emergency shifts.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Laravel/AnamNex/AnamNex.html"
-                target="_blank">
-                Read More
-              </a>
-              <a class="btn" target="_blank" href="https://www.anamnex.net">
-                Live Site ->
-              </a>
-            </div>
-          </div>
-        </article>
-
-
-      </div>
-
-
-
-<!--|--------------------------------------------------------->
-<!--          SHOPIFY SECTION           -->
-<!--|--------------------------------------------------------->
-
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Handpicked Shopify Stores I've Built
-        </h3>
-      </div>
-
-      <!-- Projects Section -->
-      <div class="grid cols-2">
-
-        <!-- Droploop Collective -->
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          
+        <!-- Droploop Collective   --> 
         <article class="card">
           <img src="res/pages/portfolio/Client_Projects/Shopify/DropLoopCollective/1.jpg"
             alt="Droploop Collective Preview" style="object-fit:fill; height: 400px; width: 100%;" />
@@ -289,431 +320,558 @@
           </div>
         </article>
 
-        <!-- Trendy Wear PK -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Shopify/TrendyWear/1.png" alt="Trendy Wear PK Preview"
-            style="object-fit:fill; height: 400px; width: 100%;" />
-          <div class="card-content">
-            <h3>Trendy Wear PK – Shopify Store</h3>
-            <div>
-              <span class="badge">Shopify</span>
-              <span class="badge">Liquid</span>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">E-commerce</span>
-              <span class="badge">Fashion</span>
-              <span class="badge">Pakistan</span>
+      
+
+          <!-- Trendy Wear PK -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Shopify/TrendyWear/1.png"
+              alt="Trendy Wear PK Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
+            <div class="card-content">
+              <h3>Trendy Wear PK – Shopify Store</h3>
+              <div>
+                <span class="badge">Shopify</span>
+                <span class="badge">Liquid</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">E-commerce</span>
+                <span class="badge">Fashion</span>
+                <span class="badge">Pakistan</span>
+              </div>
+              <p class="muted">
+                Trendy Wear PK is a Pakistan-based clothing brand offering Kids
+                Collection, 2PC Collection, 3 PC Collection, and Women's
+                Essentials. I developed a Shopify store with standard shipping
+                of 200 PKR across all Pakistan, featuring easy navigation for
+                affordable and stylish local fashion.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Shopify/TrendyWear/TrendyWear.html"
+                  target="_blank"
+                  >Read More</a
+                >
+                <a class="btn" href="https://trendywearpk.shop" target="_blank"
+                  >Visit Website</a
+                >
+              </div>
             </div>
-            <p class="muted">
-              Trendy Wear PK is a Pakistan-based clothing brand offering Kids Collection, 2PC Collection, 3 PC
-              Collection, and Women's Essentials. I developed a Shopify store with standard shipping of 200 PKR across
-              all Pakistan, featuring easy navigation for affordable and stylish local fashion.
-            </p>
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Shopify/TrendyWear/TrendyWear.html"
-                target="_blank">Read More</a>
-              <a class="btn" href="https://trendywearpk.shop" target="_blank">Visit Website</a>
+          </article>
+
+          <!-- Bruvi -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Shopify/Bruvi/1.png"
+              alt="Bruvi Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
+            <div class="card-content">
+              <h3>Bruvi – Shopify Premium Store</h3>
+              <div>
+                <span class="badge">Shopify Plus</span>
+                <span class="badge">Liquid</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Custom App</span>
+                <span class="badge">Subscription</span>
+              </div>
+              <p class="muted">
+                Bruvi is a premium coffee brand reinventing the single-serve
+                experience. For this project, I built a high-conversion Shopify
+                store with integrated subscription functionality, custom product
+                bundling, and a refined UI that reflects their modern,
+                sustainable brand identity.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Shopify/Bruvi/Bruvi.html"
+                  target="_blank"
+                  >Read More</a
+                >
+                <a class="btn" href="https://bruvi.com" target="_blank"
+                  >Visit Website</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <!-- Bruvi -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Shopify/Bruvi/1.png" alt="Bruvi Preview"
-            style="object-fit:fill; height: 400px; width: 100%;" />
-          <div class="card-content">
-            <h3>Bruvi – Shopify Premium Store</h3>
-            <div>
-              <span class="badge">Shopify Plus</span>
-              <span class="badge">Liquid</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">Custom App</span>
-              <span class="badge">Subscription</span>
+        <!--|--------------------------------------------------------->
+        <!--          WORDPRESS SECTION           -->
+        <!--|--------------------------------------------------------->
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Handpicked WordPress Websites I've Built
+          </h3>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          <!-- Medora -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Mine/Medora/logo.png"
+              alt="Medora WordPress Plugin Preview"
+              style="object-fit: fill; width: 100%"
+            />
+
+            <div class="card-content">
+              <h3>Medora – WordPress Backup & Media Cleanup Plugin</h3>
+
+              <div>
+                <span class="badge">WordPress Plugin</span>
+                <span class="badge">PHP</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Open Source</span>
+                <span class="badge">Object-Oriented PHP</span>
+              </div>
+
+              <p class="muted">
+                <strong>Started:</strong> July 2026<br />
+                <strong>Status:</strong> In Development
+              </p>
+
+              <p class="muted">
+                Medora is an open-source WordPress plugin that I designed and
+                developed from scratch to help website owners back up their
+                media library and safely identify unused media files for
+                cleanup. The plugin follows a modular, object-oriented
+                architecture with a modern admin interface, making it easy to
+                maintain, extend, and contribute to. It is being developed with
+                community contributions in mind and aims to provide a reliable
+                solution for WordPress media management.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Mine/Medora/Medora.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+
+                <a
+                  class="btn"
+                  href="https://github.com/YOUR_USERNAME/medora"
+                  target="_blank"
+                >
+                  View on GitHub
+                </a>
+              </div>
             </div>
-            <p class="muted">
-              Bruvi is a premium coffee brand reinventing the single-serve experience. For this project, I built a
-              high-conversion Shopify store with integrated subscription functionality, custom product bundling, and a
-              refined UI that reflects their modern, sustainable brand identity.
-            </p>
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Shopify/Bruvi/Bruvi.html"
-                target="_blank">Read More</a>
-              <a class="btn" href="https://bruvi.com" target="_blank">Visit Website</a>
+          </article>
+
+          <!-- Wesley Mod Store -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Wordpress/wesleymodstore/1.png"
+              alt="Wesley Mod Store Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
+
+            <div class="card-content">
+              <h3>Wesley Mod Store – WordPress E-commerce Website</h3>
+
+              <div>
+                <span class="badge">WordPress</span>
+                <span class="badge">WooCommerce</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">E-commerce</span>
+              </div>
+
+              <p class="muted">
+                Wesley Mod Store is a WordPress-based e-commerce website
+                designed for selling digital products and mods. I contributed to
+                building a clean, responsive storefront with optimized product
+                layouts, smooth navigation, and a user-friendly shopping
+                experience tailored for digital product distribution.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Wordpress/wesleymodstore/index.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+
+                <a
+                  class="btn"
+                  href="https://wesleymodstore.com/"
+                  target="_blank"
+                >
+                  Visit Website
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-      </div>
+          <!-- Granzotti Advocacia - WordPress Law Firm Website -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Wordpress/Granzotti/1.png"
+              alt="Granzotti Advocacia Website Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
 
-<!--|--------------------------------------------------------->
-<!--          WORDPRESS SECTION           -->
-<!--|--------------------------------------------------------->
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Handpicked WordPress Websites I've Built
-        </h3>
-      </div>
+            <div class="card-content">
+              <h3>Granzotti Advocacia – WordPress Law Firm Website</h3>
 
-      <!-- Projects Section -->
-      <div class="grid cols-2">
+              <div>
+                <span class="badge">WordPress</span>
+                <span class="badge">Elementor Pro</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">Law Firm</span>
+              </div>
 
-        <!-- Medora -->
-        <article class="card">
+              <p class="muted">
+                Granzotti Advocacia is a specialized law firm focusing on Real
+                Estate, Corporate, Contract, and Credit Recovery law. Built with
+                WordPress and Elementor Pro, the website presents a professional
+                and trustworthy profile, highlighting personalized legal
+                assistance, the firm's core values of ethics and transparency,
+                and detailed practice areas to build credibility with potential
+                clients.
+              </p>
 
-          <img src="res/pages/portfolio/Projects/Medora/1.png"
-            alt="Medora WordPress Plugin Preview"
-            style="object-fit: fill; height: 400px; width: 100%;" />
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Wordpress/Granzotti/Granzotti.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
 
-          <div class="card-content">
-            <h3>Medora – WordPress Backup & Media Cleanup Plugin</h3>
-
-            <div>
-              <span class="badge">WordPress Plugin</span>
-              <span class="badge">PHP</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">Open Source</span>
-              <span class="badge">Object-Oriented PHP</span>
+                <a class="btn" href="https://granzotti.com.br/" target="_blank">
+                  Visit Website
+                </a>
+              </div>
             </div>
+          </article>
 
-            <p class="muted">
-              <strong>Started:</strong> July 2026<br>
-              <strong>Status:</strong> In Development
-            </p>
+          <!-- La29SV.COM -->
 
-            <p class="muted">
-              Medora is an open-source WordPress plugin that I designed and developed from scratch to help website owners back up their media library and safely identify unused media files for cleanup. The plugin follows a modular, object-oriented architecture with a modern admin interface, making it easy to maintain, extend, and contribute to. It is being developed with community contributions in mind and aims to provide a reliable solution for WordPress media management.
-            </p>
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Wordpress/LA29SV/1.png"
+              alt="LA29SV WordPress Automotive Marketplace Website Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
 
-            <div class="actions">
-              <a class="btn primary"
-                href="res/pages/portfolio/Mine/Medora/Medora.html"
-                target="_blank">
-                Read More
-              </a>
+            <div class="card-content">
+              <h3>LA29SV – WordPress Automotive Marketplace Platform</h3>
 
-              <a class="btn"
-                href="https://github.com/YOUR_USERNAME/medora"
-                target="_blank">
-                View on GitHub
-              </a>
+              <div>
+                <span class="badge">WordPress</span>
+                <span class="badge">Elementor Pro</span>
+                <span class="badge">WooCommerce</span>
+                <span class="badge">Custom Development</span>
+                <span class="badge">Automotive Marketplace</span>
+              </div>
+
+              <p class="muted">
+                LA29SV is a WordPress-based automotive marketplace platform
+                designed to connect customers with automotive businesses,
+                products, and services. The platform includes business and
+                seller functionality, listings, search features, and
+                user-focused workflows, providing a scalable digital solution
+                for the automotive industry.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Wordpress/LA29SV/LA29SV.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+
+                <a class="btn" href="https://la29sv.com/" target="_blank">
+                  Visit Website
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
+        </div>
 
-        </article>
+        <!-- Wix SECTION -->
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Handpicked Wix Projects I've Built
+          </h3>
+        </div>
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          <!-- Fuentes De Empleo: Recruitment Platform -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Wix/FuentesDeEmpleo/2.png"
+              alt="Fuentes De Empleo Platform"
+              style="object-fit: fill; height: 400px"
+            />
 
-        <!-- Educacion Global -->
-        <article class="card">
+            <div class="card-content">
+              <h3>Fuentes De Empleo: Recruitment Platform</h3>
 
-          <img src="res/pages/portfolio/Client_Projects/Wordpress/EducacionGlobal/1.png"
-            alt="Educacion Global Website Preview" style="object-fit:fill; height: 400px; width: 100%;" />
+              <div>
+                <span class="badge">Web App</span>
+                <span class="badge">Wix</span>
+                <span class="badge">Job Portal</span>
+                <span class="badge">Email Automation</span>
+                <span class="badge">Recruitment</span>
+              </div>
 
-          <div class="card-content">
-            <h3>Educación Global – WordPress Education & Certification Website</h3>
+              <p class="muted">
+                A recruitment landing platform built to connect job seekers with
+                employers seamlessly. Candidates submit applications through
+                forms that automatically send their data to both the client and
+                the respective employer. Companies can also directly contact the
+                client via email, creating a fast and efficient hiring workflow
+                without manual intervention.
+              </p>
 
-            <div>
-              <span class="badge">WordPress</span>
-              <span class="badge">Elementor</span>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">Education Platform</span>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Wix/FuentesDeEmpleo/FuentesDeEmpleo.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://www.fuentesdeempleo.com/"
+                >
+                  Live Site ->
+                </a>
+              </div>
             </div>
+          </article>
+        </div>
 
-            <p class="muted">
-              Educacion Global is a WordPress-based educational platform designed to present international training
-              and certification programs. I contributed to building a responsive layout with structured content
-              sections,
-              clear navigation, and a professional design focused on educational credibility and user engagement.
-            </p>
+        <!-- Mobile Apps SECTION -->
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Handpicked Mobile Apps/Games I've Built
+          </h3>
+        </div>
 
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Wordpress/EducacionGlobal/index.html"
-                target="_blank">
-                Read More
-              </a>
-
-              <a class="btn" href="https://educacionglobal.info/" target="_blank">
-                Visit Website
-              </a>
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          <!-- The Great War -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/The_Great_War/icon.png"
+              alt="The Great War Preview"
+              style="object-fit: fill; height: 400px; width: 100%"
+            />
+            <div class="card-content">
+              <h3>The Great War</h3>
+              <div>
+                <span class="badge">Unity</span>
+                <span class="badge">C#</span>
+                <span class="badge">FPS</span>
+                <span class="badge">Solo Project</span>
+              </div>
+              <p class="muted">
+                The Great War is the first FPS shooting game from Afghanistan.
+                Built entirely by me for fun and learning when free, it features
+                realistic shooting mechanics, AI enemies.
+              </p>
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/The_Great_War/TheGreatWar.html"
+                  target="_blank"
+                  >Read More</a
+                >
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://apkpure.com/p/com.aprotechstudio.thegreatwar"
+                  >Download from store</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Wesley Mod Store -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Wordpress/wesleymodstore/1.png" alt="Wesley Mod Store Preview"
-            style="object-fit:fill; height: 400px; width: 100%;" />
+          <!-- Tourist Guide App (Glide) -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/TouristGuideApp/icon.png"
+              alt="Tourist Guide App"
+              style="object-fit: fill; height: 400px"
+            />
 
-          <div class="card-content">
-            <h3>Wesley Mod Store – WordPress E-commerce Website</h3>
+            <div class="card-content">
+              <h3>Tourist Guide App</h3>
 
-            <div>
-              <span class="badge">WordPress</span>
-              <span class="badge">WooCommerce</span>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">E-commerce</span>
+              <div>
+                <span class="badge">Mobile App</span>
+                <span class="badge">Glide</span>
+                <span class="badge">No-Code</span>
+                <span class="badge">QR System</span>
+              </div>
+
+              <p class="muted">
+                A smart digital concierge app built with Glide for vacation
+                rental properties. Guests scan a unique QR code assigned to each
+                property (e.g., Casa de Rita) to instantly access house rules,
+                guides, local activities, and curated travel experiences.
+                Designed to enhance guest experience while reducing host
+                communication overhead.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/TouristGuideApp/TouristGuideApp.html"
+                  target="_blank"
+                  >Read More</a
+                >
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://house-guide-gxbq.glide.page/dl/66ace4"
+                  >Live App</a
+                >
+              </div>
             </div>
+          </article>
 
-            <p class="muted">
-              Wesley Mod Store is a WordPress-based e-commerce website designed for selling digital products and mods.
-              I contributed to building a clean, responsive storefront with optimized product layouts, smooth
-              navigation,
-              and a user-friendly shopping experience tailored for digital product distribution.
-            </p>
+          <!-- Fitness App: Gym Workout Plan -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Flutter/GymWp/featured.png"
+              alt="Gym Workout Plan App"
+              style="object-fit: fill; height: 400px"
+            />
 
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Wordpress/wesleymodstore/index.html"
-                target="_blank">
-                Read More
-              </a>
+            <div class="card-content">
+              <h3>Fitness App: Gym Workout Plan</h3>
 
-              <a class="btn" href="https://wesleymodstore.com/" target="_blank">
-                Visit Website
-              </a>
+              <div>
+                <span class="badge">Mobile App</span>
+                <span class="badge">Flutter</span>
+                <span class="badge">Workout Planner</span>
+                <span class="badge">Fitness Tracking</span>
+                <span class="badge">Google Play</span>
+              </div>
+
+              <p class="muted">
+                A comprehensive fitness application designed to help users lose
+                weight, build muscle, and achieve body goals through structured
+                workout plans. The app provides full-body and targeted exercise
+                routines including chest, abs, arms, upper body, and fat-burning
+                workouts. It includes 3D exercises, workout tracking, and a
+                personalized fitness experience.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Flutter/GymWp/GymWp.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/Samiullah-Popalzai/Gym-WP-Workout-Fitness-Planner"
+                >
+                  Github Repo->
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <!-- Granzotti Advocacia - WordPress Law Firm Website -->
-        <article class="card">
+        <!-- Other SECTION -->
+        <div style="margin: 48px 0 24px 0">
+          <h3
+            style="
+              font-size: 22px;
+              font-weight: 600;
+              border-left: 4px solid #7c9aff;
+              padding-left: 16px;
+            "
+          >
+            Other Projects I've Built
+          </h3>
+        </div>
+        <!-- Projects Section -->
+        <div class="grid cols-2">
+          <!-- WhatsApp Builderbot Integration -->
+          <article class="card">
+            <img
+              src="res/pages/portfolio/Client_Projects/Other/La29SV/2.png"
+              alt="WhatsApp Builderbot Integration"
+              style="object-fit: fill; height: 400px"
+            />
 
-          <img src="res/pages/portfolio/Client_Projects/Wordpress/Granzotti/1.png"
-            alt="Granzotti Advocacia Website Preview" style="object-fit:fill; height: 400px; width: 100%;" />
+            <div class="card-content">
+              <h3>WhatsApp Builderbot Integration</h3>
 
-          <div class="card-content">
-            <h3>Granzotti Advocacia – WordPress Law Firm Website</h3>
+              <div>
+                <span class="badge">WhatsApp API</span>
+                <span class="badge">Builderbot</span>
+                <span class="badge">Automation</span>
+                <span class="badge">Meta API</span>
+                <span class="badge">Chatbot</span>
+              </div>
 
-            <div>
-              <span class="badge">WordPress</span>
-              <span class="badge">Elementor Pro</span>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">Law Firm</span>
+              <p class="muted">
+                Integrated a Builderbot-powered chatbot with WhatsApp Business
+                API (Meta), enabling production deployment on a dedicated phone
+                number with stable message handling for high-volume marketing
+                automation.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn primary"
+                  href="res/pages/portfolio/Client_Projects/Other/La29SV/La29SV.html"
+                  target="_blank"
+                >
+                  Read More
+                </a>
+              </div>
             </div>
-
-            <p class="muted">
-              Granzotti Advocacia is a specialized law firm focusing on Real Estate, Corporate, Contract, and Credit
-              Recovery law. Built with WordPress and Elementor Pro, the website presents a professional and trustworthy
-              profile, highlighting personalized legal assistance, the firm's core values of ethics and transparency,
-              and detailed practice areas to build credibility with potential clients.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Wordpress/Granzotti/Granzotti.html"
-                target="_blank">
-                Read More
-              </a>
-
-              <a class="btn" href="https://granzotti.com.br/" target="_blank">
-                Visit Website
-              </a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Wix SECTION -->
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Handpicked Wix Projects I've Built
-        </h3>
-      </div>
-      <!-- Projects Section -->
-      <div class="grid cols-2">
-        <!-- Fuentes De Empleo: Recruitment Platform -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Wix/FuentesDeEmpleo/2.png" alt="Fuentes De Empleo Platform"
-            style="object-fit: fill;height: 400px;" />
-
-          <div class="card-content">
-            <h3>Fuentes De Empleo: Recruitment Platform</h3>
-
-            <div>
-              <span class="badge">Web App</span>
-              <span class="badge">Wix</span>
-              <span class="badge">Job Portal</span>
-              <span class="badge">Email Automation</span>
-              <span class="badge">Recruitment</span>
-            </div>
-
-            <p class="muted">
-              A recruitment landing platform built to connect job seekers with employers seamlessly. Candidates submit
-              applications through forms that automatically send their data to both the client and the respective
-              employer.
-              Companies can also directly contact the client via email, creating a fast and efficient hiring workflow
-              without
-              manual intervention.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Wix/FuentesDeEmpleo/FuentesDeEmpleo.html"
-                target="_blank">
-                Read More
-              </a>
-              <a class="btn" target="_blank" href="https://www.fuentesdeempleo.com/">
-                Live Site ->
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Mobile Apps SECTION -->
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Handpicked Mobile Apps/Games I've Built
-        </h3>
-      </div>
-
-      <!-- Projects Section -->
-      <div class="grid cols-2">
-        <!-- The Great War -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/The_Great_War/icon.png" alt="The Great War Preview"
-            style="object-fit:fill; height: 400px; width: 100%;" />
-          <div class="card-content">
-            <h3>The Great War </h3>
-            <div>
-              <span class="badge">Unity</span>
-              <span class="badge">C#</span>
-              <span class="badge">FPS</span>
-              <span class="badge">Solo Project</span>
-            </div>
-            <p class="muted">
-              The Great War is the first FPS shooting game from Afghanistan.
-              Built entirely by me for fun and learning when free, it features realistic shooting mechanics, AI
-              enemies.
-            </p>
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/The_Great_War/TheGreatWar.html"
-                target="_blank">Read
-                More</a>
-              <a class="btn" target="_blank" href="https://apkpure.com/p/com.aprotechstudio.thegreatwar">Download from
-                store</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Tourist Guide App (Glide) -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/TouristGuideApp/icon.png" alt="Tourist Guide App"
-            style="object-fit: fill;height: 400px;" />
-
-          <div class="card-content">
-            <h3>Tourist Guide App</h3>
-
-            <div>
-              <span class="badge">Mobile App</span>
-              <span class="badge">Glide</span>
-              <span class="badge">No-Code</span>
-              <span class="badge">QR System</span>
-            </div>
-
-            <p class="muted">
-              A smart digital concierge app built with Glide for vacation rental properties.
-              Guests scan a unique QR code assigned to each property (e.g., Casa de Rita) to instantly access
-              house rules, guides, local activities, and curated travel experiences. Designed to enhance
-              guest experience while reducing host communication overhead.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/TouristGuideApp/TouristGuideApp.html"
-                target="_blank">Read
-                More</a>
-              <a class="btn" target="_blank" href="https://house-guide-gxbq.glide.page/dl/66ace4">Live App</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Fitness App: Gym Workout Plan -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Flutter/GymWp/featured.png" alt="Gym Workout Plan App"
-            style="object-fit: fill;height: 400px;" />
-
-          <div class="card-content">
-            <h3>Fitness App: Gym Workout Plan</h3>
-
-            <div>
-              <span class="badge">Mobile App</span>
-              <span class="badge">Flutter</span>
-              <span class="badge">Workout Planner</span>
-              <span class="badge">Fitness Tracking</span>
-              <span class="badge">Google Play</span>
-            </div>
-
-            <p class="muted">
-              A comprehensive fitness application designed to help users lose weight, build muscle, and achieve body
-              goals
-              through structured workout plans. The app provides full-body and targeted exercise routines including
-              chest,
-              abs, arms, upper body, and fat-burning workouts. It includes 3D exercises, workout tracking, and a
-              personalized
-              fitness experience.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Flutter/GymWp/GymWp.html"
-                target="_blank">
-                Read More
-              </a>
-              <a class="btn" target="_blank"
-                href="https://github.com/Samiullah-Popalzai/Gym-WP-Workout-Fitness-Planner">
-                Github Repo->
-              </a>
-            </div>
-          </div>
-        </article>
-
-
-      </div>
-
-
-
-
-
-
-      <!-- Other SECTION -->
-      <div style="margin: 48px 0 24px 0;">
-        <h3 style="font-size: 22px; font-weight: 600; border-left: 4px solid #7c9aff; padding-left: 16px;">
-          Other Projects I've Built
-        </h3>
-      </div>
-      <!-- Projects Section -->
-      <div class="grid cols-2">
-        <!-- WhatsApp Builderbot Integration -->
-        <article class="card">
-          <img src="res/pages/portfolio/Client_Projects/Other/La29SV/2.png" alt="WhatsApp Builderbot Integration"
-            style="object-fit: fill;height: 400px;" />
-
-          <div class="card-content">
-            <h3>WhatsApp Builderbot Integration</h3>
-
-            <div>
-              <span class="badge">WhatsApp API</span>
-              <span class="badge">Builderbot</span>
-              <span class="badge">Automation</span>
-              <span class="badge">Meta API</span>
-              <span class="badge">Chatbot</span>
-            </div>
-
-            <p class="muted">
-              Integrated a Builderbot-powered chatbot with WhatsApp Business API (Meta), enabling production deployment
-              on a dedicated phone number with stable message handling for high-volume marketing automation.
-            </p>
-
-            <div class="actions">
-              <a class="btn primary" href="res/pages/portfolio/Client_Projects/Other/La29SV/La29SV.html"
-                target="_blank">
-                Read More
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-    </main>
-  </div>
-</body>
-
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
