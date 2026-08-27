@@ -1,180 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me - Samiullah Popalzai</title>
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Samiullah Popalzai",
-            "image": "https://yourdomain.github.io/res/images/sami.png",
-            "jobTitle": "Software Engineer",
-            "url": "https://samiullah-popalzai.github.io/"
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Samiullah Popalzai",
+        "image": "https://yourdomain.github.io/res/images/sami.png",
+        "jobTitle": "Software Engineer",
+        "url": "https://samiullah-popalzai.github.io/"
+      }
     </script>
 
-    <link rel="icon" type="image/png" href="res/images/favicon.png">
+    <link rel="icon" type="image/png" href="res/images/favicon.png" />
 
     <style>
-        section#about {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+      section#about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
 
-        /* Profile Image */
-        .profile-image {
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
-            display: flex;
-            justify-content: center;
-        }
+      /* Profile Image */
+      .profile-image {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+      }
 
-        .profile-image img {
-            width: 100%;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            object-fit: cover;
-        }
+      .profile-image img {
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
 
-        /* About Me Text */
+      /* About Me Text */
+      .about-text {
+        flex: 2;
+        min-width: 300px;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+      }
+
+      /* Certificates Section */
+      .certificates {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .certificates h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .cert-degree {
+        margin-bottom: 40px;
+      }
+
+      .cert-degree h3 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .cert-grid a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .cert-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .cert-grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .cert-grid p {
+        text-align: center;
+        margin-top: 5px;
+        font-weight: 500;
+      }
+
+      /* Responsive Text Centering on Small Screens */
+      @media (max-width: 768px) {
         .about-text {
-            flex: 2;
-            min-width: 300px;
-            text-align: center;
+          text-align: center;
         }
+      }
 
-        .about-text h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
+      .cert-degree {
+        margin-top: 28px;
+        padding: 28px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
 
-        /* Certificates Section */
-        .certificates {
-            width: 100%;
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .certificates h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .cert-degree {
-            margin-bottom: 40px;
-        }
-
-        .cert-degree h3 {
-            text-align: center;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
-
-        .cert-grid a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .cert-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .cert-grid img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .cert-grid p {
-            text-align: center;
-            margin-top: 5px;
-            font-weight: 500;
-        }
-
-        /* Responsive Text Centering on Small Screens */
-        @media (max-width: 768px) {
-            .about-text {
-                text-align: center;
-            }
-        }
-
-        .cert-degree {
-            margin-top: 28px;
-            padding: 28px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-
-        }
-
-        p {
-            text-align-last: center;
-            text-align: justify;
-
-        }
+      p {
+        text-align-last: center;
+        text-align: justify;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="about">
-        <!-- Profile Image -->
-        <div class="profile-image">
-            <img src="res/images/sami.png" alt="Samiullah Popalzai">
-        </div>
+      <!-- Profile Image -->
+      <div class="profile-image">
+        <img src="res/images/sami.png" alt="Samiullah Popalzai" />
+      </div>
 
-        <!-- About Me Text -->
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Samiullah Popalzai. I started freelancing in 2020, and over the years I've completed more than
-                60 projects, with most of them being WordPress projects.
-
-                My experience includes building custom WordPress websites, developing plugins and custom functionality,
-                working with WooCommerce, integrating third-party APIs, optimizing website performance, improving
-                security, fixing complex bugs, and customizing themes based on client requirements. I enjoy solving
-                technical problems and finding clean, scalable solutions.
-
-                Earlier in my career I also worked with technologies like Flutter, Kotlin, Unity, Wix, and automation
-                tools such as n8n and BuilderBot Cloud. Working with different technologies helped me become a stronger
-                developer and improved my problem-solving skills.
-
-                One project I'm particularly proud of is a 3D mobile game that I built over four years while learning
-                Unity and C#. That experience taught me patience, persistence, and how to break down complex problems
-                into manageable solutions.
-
-                As my experience grew, I realized that WordPress gives me the opportunity to combine development,
-                customization, security, and performance optimization in a way that I really enjoy. That's why I decided
-                to specialize in WordPress and continue expanding my expertise.
-
-                Now I'm looking for a full-time Senior WordPress Developer position where I can contribute to
-                challenging projects, collaborate with experienced engineers, and continue growing while delivering
-                high-quality solutions for clients.
-
-            </p>
-
-        </div>
+      <!-- About Me Text -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Full Stack Developer with 5+ years of experience architecting scalable
+          web solutions for clients globally. Successfully delivered 60+
+          projects, ranging from custom SaaS platforms to high-traffic
+          e-commerce stores. TopTal Verified WordPress Developer specializing in
+          secure, production-grade code, API development, and database
+          optimization. Developed and maintain "Medora Clean Unused Media," a
+          WordPress plugin, demonstrating expertise in PHP, MySQL, and REST API
+          architecture. Passionate about building efficient, maintainable
+          systems across the entire stack—from back-end logic to responsive
+          front-end interfaces.
+        </p>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
