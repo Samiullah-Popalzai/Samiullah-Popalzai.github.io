@@ -3,192 +3,1920 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>AnamNex · SaaS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts + Design System -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>AnamNex | Medical AI SaaS Case Study</title>
+
+    <meta
+        name="description"
+        content="AnamNex medical SaaS case study covering Laravel development, AI powered ECG analysis, medical image analysis, asynchronous processing and clinical workflows."
+    >
+
+    <meta name="author" content="Samiullah Popalzai">
+
     <link rel="stylesheet" href="../../../../../../style.css">
 
+    <style>
+        .scrollable-image {
+            max-height: 700px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: block;
+            cursor: default;
+        }
+
+        .scrollable-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .scrollable-image::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .scrollable-image::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .scrollable-image::-webkit-scrollbar-thumb {
+            background: rgba(245, 215, 122, 0.45);
+            border-radius: 10px;
+        }
+
+        .scrollable-image::-webkit-scrollbar-thumb:hover {
+            background: rgba(245, 215, 122, 0.7);
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <header>
-        <div class="row" style="padding: 0px 40px; padding-top: 20px;">
-            <p class="headline">AnamNex · SaaS</p>
-            <a href="https://www.anamnex.net" target="_blank" class="primaryButton">Visit Website →</a>
+
+    <!-- TOP NAVIGATION -->
+
+    <header class="topbar">
+
+        <div class="container topbar-inner">
+
+            <a
+                href="../../../../../../index.html"
+                class="brand"
+            >
+                Samiullah <span>Popalzai</span>
+            </a>
+
+
+            <nav class="top-nav">
+
+                <a href="#overview">
+                    Overview
+                </a>
+
+                <a href="#role">
+                    My Role
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#results">
+                    Results
+                </a>
+
+            </nav>
+
         </div>
-        <img class="bannerImage" src="1.png" alt="AnamNex AI Medical Platform Dashboard Preview" style="width: 100%; object-fit: cover;"
-            onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/4c9aff?text=AnamNex+-+SaaS+Platform+for+Internal+Processes+%26+AI+Clinical+Support';">
+
     </header>
 
 
 
-
-    <div class="content">
-
+    <main>
 
 
+        <!-- HERO -->
 
-        <!--Tech Stack & Tools-->
-        <div class="section">
-            <h2>Tech Stack & Tools</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>PHP / Laravel</h6>
-                </div>
-                <div class="card">
-                    <h6>Nginx</h6>
-                </div>
-                <div class="card">
-                    <h6>JavaScript (Vanilla)</h6>
-                </div>
-                <div class="card">
-                    <h6>MySQL / Redis</h6>
-                </div>
-                <div class="card">
-                    <h6>AI APIs (ECG + Vision)</h6>
-                </div>
-            </div>
-            <p>
-                AnamNex is built on a robust Laravel PHP backend running on Nginx server for high-performance handling of clinical requests. The platform leverages Laravel's queue system for asynchronous ECG and medical image analysis, Eloquent ORM for managing physicians, patients, and reports, and Redis for caching. Vanilla JavaScript powers the medical exam upload interface (.mat, .hea files, and clinical images), real-time progress indicators, and interactive visualization of AI-generated reports. The platform integrates with proprietary artificial intelligence APIs for cardiac signal interpretation and dermatological image analysis.
-            </p>
-        </div>
-        <!--My Role-->
-        <div class="row section">
-            <div>
-                <h2>My Role</h2>
-                <p>
-                    As the lead backend and full-stack developer for AnamNex, I architected and built the entire Laravel application from the ground up. I designed the database schema for physician accounts, patient registration, storage of medical exams (ECG in technical formats .mat/.hea and clinical images), and an AI-generated report system. I implemented the queue worker infrastructure to handle complex ECG analysis and wound/lesion classification without blocking the user interface, ensuring speed even in busy emergency rooms.
+        <section class="hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Laravel & Medical AI Case Study
+                </span>
+
+
+                <h1>
+                    AnamNex
+                    <span class="accent">
+                        Medical AI SaaS Platform
+                    </span>
+                </h1>
+
+
+                <p class="lead">
+                    A Laravel based medical SaaS platform designed to
+                    support physicians with AI powered ECG analysis,
+                    medical image classification, asynchronous
+                    processing and centralized clinical workflows.
                 </p>
-                <p>
-                    I developed RESTful APIs for communication between the JavaScript frontend and AI backends, integrated webhooks for report-ready notifications, and built administrative dashboards for clinic-level usage monitoring. I also implemented automated cleanup scripts for anonymized data after 60 days, email notifications via Laravel Notifications when AI analyses are complete, and optimized Nginx configuration for fast delivery of medical images and PDF reports. My role covered backend architecture, API development, database design, AI service integration, and performance optimization for clinical environments.
-                </p>
+
+
+                <div class="hero-meta">
+
+                    <span class="tag">
+                        Laravel
+                    </span>
+
+                    <span class="tag">
+                        PHP
+                    </span>
+
+                    <span class="tag">
+                        Medical AI
+                    </span>
+
+                    <span class="tag">
+                        JavaScript
+                    </span>
+
+                    <span class="tag">
+                        MySQL
+                    </span>
+
+                    <span class="tag">
+                        Redis
+                    </span>
+
+                    <span class="tag">
+                        Nginx
+                    </span>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.anamnex.net"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Visit Website
+                    </a>
+
+
+                    <a
+                        href="#overview"
+                        class="btn"
+                    >
+                        Explore Case Study
+                    </a>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <a
+                        href="1.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-link"
+                    >
+
+                        <img
+                            src="1.png"
+                            alt="AnamNex medical AI platform dashboard"
+                            loading="eager"
+                        >
+
+                    </a>
+
+                </div>
+
             </div>
-            <div>
-                <img src="../../../../../images/myrole.png" alt="AnamNex backend dashboard - Laravel administration panel"
-                    style="width: 100%; height: auto;" class="imageCard"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/4c9aff?text=My+Role+-+Laravel+Backend+Architecture+%7C+ECG+AI+Integration';">
-            </div>
-        </div>
 
-        <div class="section">
-            <h2>Client Review</h2>
-            <a href="rating.png" target="_blank">
-                <img src="rating.png" alt="Client rating 5 stars" style="width: 100%; height: auto;" class="imageCard popup"
-                    onerror="this.onerror=null; this.src='https://placehold.co/1200x600/101826/4c9aff?text=Client+Review+5+Stars+%7C+%22Transformed+our+ER+workflow%22';">
-            </a>
-        </div>
+        </section>
 
 
-        <div class="section">
-            <h2>Complete Case Study</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>30s</h3>
-                    <p>Average ECG analysis time from upload to AI-generated report</p>
-                </div>
 
-                <div class="card">
-                    <h3>98%</h3>
-                    <p>Sensitivity in arrhythmia detection (validated with clinical datasets)</p>
-                </div>
+        <!-- PROJECT INFORMATION -->
 
-                <div class="card">
-                    <h3>4+</h3>
-                    <p>Medical image types supported: ECG traces, wounds, skin lesions, dermatology</p>
-                </div>
+        <section class="section">
 
-                <div class="card">
-                    <h3>60 days</h3>
-                    <p>Data retention & anonymization policy for patient privacy compliance</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p>AnamNex is a complete medical SaaS platform developed to support emergency physicians (plantonistas) in daily clinical practice, using artificial intelligence applied directly to point-of-care decision making. The platform focuses on speed, diagnostic accuracy, and centralization of clinical information in a single secure and intuitive environment.</p>
+            <div class="container">
 
-                    <p><strong>🔹 Automated ECG reading with AI:</strong> The system performs automatic analysis of electrocardiograms (ECG), processing technical files (.mat, .hea) as well as ECG images. The artificial intelligence interprets cardiac signals and automatically generates a clinical report, helping to identify arrhythmias, electrical alterations, and relevant cardiac patterns — optimizing shift decision-making.</p>
+                <div class="info-grid">
 
-                    <p><strong>🔹 Medical image analysis with AI (wounds, lesions, dermatology):</strong> The platform allows clinical image upload for automated analysis. Using computer vision models, AnamNex classifies wound types, skin lesions, and dermatological conditions, providing structured descriptions and severity triage suggestions. This feature is particularly valuable for emergency rooms, wound care, and dermatology support.</p>
 
-                    <p>The client needed a scalable, high-performance web application capable of handling asynchronous AI model inference for both ECG signal processing and medical vision tasks, while maintaining medical data privacy and delivering fast, actionable insights. I built the platform using Laravel on Nginx, with a vanilla JavaScript frontend for dynamic interactions. The backend manages physician authentication, patient-episode linking, queue jobs for AI analysis, and secure API integrations with specialized medical AI services.</p>
+                    <div class="info-item">
 
-                    <p>One key challenge was processing .mat and .hea technical ECG files — raw signal data — requiring custom parsing libraries integrated with Laravel's filesystem. I built dedicated service classes to transform physiological signals into tensors consumable by the AI inference engine. Another challenge was maintaining sub‑30 second turnaround for ECG reports even under peak ER loads. I implemented Laravel's queue system with Redis and Horizon to process analyses asynchronously, sending real-time browser notifications via Laravel Echo (Pusher) when a report is ready. For data compliance, I built automated scheduled commands to irreversibly anonymize patient data after 60 days of inactivity, keeping the system GDPR and LGPD (Brazilian data protection) ready.</p>
+                        <span class="info-label">
+                            Project
+                        </span>
 
-                    <p>After launch, AnamNex successfully processes hundreds of daily ECG analyses and dozens of dermatological image classifications per clinic. Emergency physicians report significant time savings — no more manual transcription of ECG findings or searching for dermatology references. The platform continues to expand, with additional medical image types (X‑ray, CT) being integrated via the same Laravel-based microservices architecture.</p>
-                </div>
-                <div class="card" style="padding: 5px;">
-                    <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
-                        <img src="full.jpeg" style="width: 100%; padding-top: 5px;" alt="AnamNex platform walkthrough - ECG analysis interface"
-                        onerror="this.onerror=null; this.src='https://placehold.co/800x1500/101826/4c9aff?text=AnamNex+Platform+Walkthrough:+ECG+Upload+%7C+AI+Report+%7C+Lesion+Classification';">
-                        
+                        <div class="info-value">
+                            AnamNex
+                        </div>
+
                     </div>
-                    <p style="text-align: center;">Platform Walkthrough: ECG → AI Report → Clinical Decision</p>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Role
+                        </span>
+
+                        <div class="info-value">
+                            Lead Backend & Full Stack Developer
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Backend
+                        </span>
+
+                        <div class="info-value">
+                            PHP / Laravel
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Server
+                        </span>
+
+                        <div class="info-value">
+                            Nginx
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Database
+                        </span>
+
+                        <div class="info-value">
+                            MySQL / Redis
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            AI
+                        </span>
+
+                        <div class="info-value">
+                            ECG & Medical Vision APIs
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Frontend
+                        </span>
+
+                        <div class="info-value">
+                            Vanilla JavaScript
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Processing
+                        </span>
+
+                        <div class="info-value">
+                            Laravel Queue / Horizon
+                        </div>
+
+                    </div>
+
+
                 </div>
+
             </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+
+        <section
+            class="section"
+            id="overview"
+        >
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        01 / Overview
+                    </span>
+
+
+                    <h2>
+                        AI powered clinical support in a centralized SaaS platform
+                    </h2>
+
+
+                    <p>
+                        AnamNex is a medical SaaS platform developed to
+                        support emergency physicians in their daily
+                        clinical workflows through artificial
+                        intelligence.
+                    </p>
+
+
+                    <p>
+                        The platform focuses on speed, diagnostic
+                        support and centralization of clinical
+                        information inside a secure and intuitive web
+                        application.
+                    </p>
+
+
+                    <p>
+                        Physicians can upload ECG files and images for
+                        automated analysis, while medical images such as
+                        wounds and skin lesions can be processed through
+                        computer vision services.
+                    </p>
+
+
+                    <p>
+                        The application was designed around
+                        asynchronous AI processing so that complex
+                        medical analysis could run in the background
+                        without blocking the physician's interface.
+                    </p>
+
+
+                    <p>
+                        I built the platform using Laravel and Nginx,
+                        with Vanilla JavaScript powering the dynamic
+                        frontend and Redis supporting queue processing
+                        and caching.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MY ROLE -->
+
+        <section
+            class="section"
+            id="role"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        02 / My Role
+                    </span>
+
+
+                    <h2>
+                        Lead backend and full stack development
+                    </h2>
+
+
+                    <p>
+                        I architected and built the Laravel application
+                        from the ground up, covering backend
+                        architecture, database design, APIs, AI
+                        integrations, background processing and
+                        administrative workflows.
+                    </p>
+
+                </div>
+
+
+                <div class="performance-grid">
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Backend Architecture
+                            </strong>
+
+                            <span>
+                                Laravel
+                            </span>
+
+                        </div>
+
+
+                        <div class="content">
+
+                            <p>
+                                Designed and implemented the Laravel
+                                application architecture, business
+                                logic and backend services.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Clinical Data
+                            </strong>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                        </div>
+
+
+                        <div class="content">
+
+                            <p>
+                                Designed database structures for
+                                physicians, patients, medical exams,
+                                reports and clinical workflows.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                AI Integration
+                            </strong>
+
+                            <span>
+                                AI APIs
+                            </span>
+
+                        </div>
+
+
+                        <div class="content">
+
+                            <p>
+                                Integrated ECG analysis and medical
+                                image classification services through
+                                secure backend APIs.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Async Processing
+                            </strong>
+
+                            <span>
+                                Redis / Horizon
+                            </span>
+
+                        </div>
+
+
+                        <div class="content">
+
+                            <p>
+                                Implemented queue based processing for
+                                complex AI analysis without blocking the
+                                physician interface.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TECH STACK -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        03 / Technology
+                    </span>
+
+
+                    <h2>
+                        Technology stack
+                    </h2>
+
+
+                    <p>
+                        The platform combines Laravel, Vanilla
+                        JavaScript, MySQL, Redis, Nginx and specialized
+                        AI services to support clinical workflows.
+                    </p>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Backend
+                        </h3>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                PHP
+                            </strong>
+
+                            <span>
+                                Server side application language
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Laravel
+                            </strong>
+
+                            <span>
+                                Application framework and backend
+                                architecture
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Eloquent ORM
+                            </strong>
+
+                            <span>
+                                Database interaction and application
+                                models
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Infrastructure
+                        </h3>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Nginx
+                            </strong>
+
+                            <span>
+                                Web server and request handling
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Redis
+                            </strong>
+
+                            <span>
+                                Queue processing and caching
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Laravel Horizon
+                            </strong>
+
+                            <span>
+                                Queue monitoring and background jobs
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Vanilla JavaScript
+                            </strong>
+
+                            <span>
+                                Dynamic frontend interactions
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                File Uploads
+                            </strong>
+
+                            <span>
+                                Medical exam and clinical image uploads
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Real Time Updates
+                            </strong>
+
+                            <span>
+                                Progress indicators and report status
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            AI Services
+                        </h3>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                ECG Analysis
+                            </strong>
+
+                            <span>
+                                AI powered cardiac signal interpretation
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                Computer Vision
+                            </strong>
+
+                            <span>
+                                Medical image and lesion classification
+                            </span>
+
+                        </div>
+
+
+                        <div class="stack-item">
+
+                            <strong>
+                                REST APIs
+                            </strong>
+
+                            <span>
+                                Secure communication with AI services
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ARCHITECTURE -->
+
+        <section
+            class="section"
+            id="architecture"
+        >
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        04 / Architecture
+                    </span>
+
+
+                    <h2>
+                        Designing around asynchronous medical AI processing
+                    </h2>
+
+
+                    <p>
+                        One of the main architectural challenges was
+                        processing complex medical AI operations without
+                        blocking the physician's workflow.
+                    </p>
+
+
+                    <p>
+                        ECG analysis and medical image classification
+                        can require significant processing time.
+                        Executing those operations directly inside a
+                        normal web request would create unnecessary
+                        delays and reduce the responsiveness of the
+                        application.
+                    </p>
+
+
+                    <p>
+                        I implemented Laravel's queue system with
+                        Redis and Horizon so that analysis tasks could
+                        run asynchronously in the background.
+                    </p>
+
+
+                    <p>
+                        The frontend can therefore submit an examination
+                        and continue operating while the backend
+                        processes the AI analysis.
+                    </p>
+
+
+                    <p>
+                        Once the analysis is complete, the application
+                        can notify the physician and make the generated
+                        report available through the platform.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+
+                        <h3>
+                            Upload
+                        </h3>
+
+
+                        <p>
+                            Physician uploads an ECG file or clinical
+                            image through the platform.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+
+                        <h3>
+                            Queue
+                        </h3>
+
+
+                        <p>
+                            Laravel creates a background AI analysis
+                            job instead of blocking the request.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+
+                        <h3>
+                            AI Analysis
+                        </h3>
+
+
+                        <p>
+                            Specialized AI services process the ECG
+                            signals or medical images.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+
+                        <h3>
+                            Report
+                        </h3>
+
+
+                        <p>
+                            The generated analysis is returned and
+                            stored as a structured clinical report.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            05
+                        </span>
+
+
+                        <h3>
+                            Notification
+                        </h3>
+
+
+                        <p>
+                            The physician receives a notification when
+                            the analysis is ready.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- COMPLETE CASE STUDY -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        05 / Complete Case Study
+                    </span>
+
+
+                    <h2>
+                        Building an AI enabled clinical SaaS platform
+                    </h2>
+
+                </div>
+
+
+                <div class="results-grid">
+
+
+                    <article class="result">
+
+                        <h3>
+                            30s
+                        </h3>
+
+                        <p>
+                            Average ECG analysis time from upload to
+                            AI generated report.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            98%
+                        </h3>
+
+                        <p>
+                            Reported sensitivity in arrhythmia
+                            detection using validated clinical datasets.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            4+
+                        </h3>
+
+                        <p>
+                            Medical image and examination types
+                            supported by the platform.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            60 days
+                        </h3>
+
+                        <p>
+                            Data retention and anonymization period
+                            used for patient privacy management.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="performance-grid">
+
+
+                    <div class="content">
+
+                        <p>
+                            AnamNex is a complete medical SaaS platform
+                            developed to support emergency physicians
+                            in daily clinical practice using artificial
+                            intelligence at the point of care.
+                        </p>
+
+
+                        <p>
+                            The platform focuses on speed, diagnostic
+                            support and centralization of clinical
+                            information in a single secure environment.
+                        </p>
+
+
+                        <p>
+                            The system performs automated ECG analysis,
+                            processing technical files such as
+                            .mat and .hea as well as ECG images.
+                        </p>
+
+
+                        <p>
+                            Medical images can also be uploaded for
+                            automated analysis using computer vision
+                            models designed to support wound,
+                            lesion and dermatological image
+                            classification workflows.
+                        </p>
+
+
+                        <p>
+                            The client required a scalable,
+                            high performance web application capable
+                            of handling asynchronous AI inference while
+                            maintaining medical data privacy and
+                            delivering fast results.
+                        </p>
+
+
+                        <p>
+                            I built the platform using Laravel on Nginx,
+                            with Vanilla JavaScript powering dynamic
+                            frontend interactions. The backend manages
+                            physician authentication, patient episode
+                            linking, queue jobs for AI analysis and
+                            secure integrations with specialized
+                            medical AI services.
+                        </p>
+
+
+                        <p>
+                            One of the technical challenges was
+                            processing technical ECG files containing
+                            raw signal data. I implemented dedicated
+                            backend services to process these files and
+                            prepare the required data for the AI
+                            inference workflow.
+                        </p>
+
+
+                        <p>
+                            Another challenge was maintaining fast
+                            turnaround times while processing AI
+                            analysis under potentially heavy clinical
+                            workloads. Laravel queues, Redis and
+                            Horizon allow analysis tasks to run
+                            asynchronously without blocking the user
+                            interface.
+                        </p>
+
+
+                        <p>
+                            For data management, I implemented automated
+                            scheduled commands to anonymize applicable
+                            patient data after the defined retention
+                            period.
+                        </p>
+
+
+                        <p>
+                            The architecture was also designed to allow
+                            additional medical image types and AI
+                            services to be integrated through modular
+                            backend services.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SCROLLABLE PLATFORM SCREENSHOT -->
+
+                    <div class="image-block">
+
+                        <div class="image-link scrollable-image">
+
+                            <img
+                                src="full.jpeg"
+                                alt="AnamNex platform walkthrough showing ECG analysis and AI report workflow"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="image-caption">
+                            Platform Walkthrough · ECG Upload → AI Analysis → Clinical Report
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURES -->
+
+        <section
+            class="section"
+            id="features"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        06 / Features
+                    </span>
+
+
+                    <h2>
+                        Platform features and highlights
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Automated ECG Analysis
+                        </h3>
+
+                        <p>
+                            Processes .mat and .hea technical ECG files
+                            together with ECG images for AI powered
+                            analysis.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Wound & Lesion Classification
+                        </h3>
+
+                        <p>
+                            AI powered analysis of dermatological
+                            images with structured classification and
+                            severity support.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Real Time Notifications
+                        </h3>
+
+                        <p>
+                            Physicians receive alerts when background
+                            AI analysis and reports are ready.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Medical Data Privacy
+                        </h3>
+
+                        <p>
+                            Automated data management and anonymization
+                            workflows support patient privacy
+                            requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Queue Based Processing
+                        </h3>
+
+                        <p>
+                            Laravel Horizon and Redis process AI jobs
+                            asynchronously during heavy workloads.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            EHR Integration Ready
+                        </h3>
+
+                        <p>
+                            Structured clinical reports provide a
+                            foundation for integration with hospital
+                            information systems.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CLIENT REVIEW -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        07 / Client Review
+                    </span>
+
+
+                    <h2>
+                        Client feedback
+                    </h2>
+
+                </div>
+
+
+                <div class="image-block">
+
+                    <a
+                        href="rating.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-link"
+                    >
+
+                        <img
+                            src="rating.png"
+                            alt="AnamNex client rating"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+
+                    <div class="image-caption">
+                        Client review for the AnamNex project.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CHALLENGES -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        08 / Challenges & Solutions
+                    </span>
+
+
+                    <h2>
+                        Engineering around complex clinical workflows
+                    </h2>
+
+                </div>
+
+
+                <div class="challenge-list">
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Long Running AI Analysis
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Laravel queues, Redis and Horizon process
+                            AI analysis asynchronously without blocking
+                            the physician interface.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Technical ECG Files
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Dedicated backend services process .mat and
+                            .hea ECG files before sending the required
+                            data to the AI inference workflow.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Medical Image Processing
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Secure API integrations connect the Laravel
+                            backend with specialized medical vision
+                            services.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Clinical Response Time
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Background processing and optimized server
+                            configuration reduce unnecessary waiting
+                            during clinical workflows.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Patient Data Management
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Automated scheduled processes manage
+                            applicable inactive and anonymized data
+                            according to the defined retention policy.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Growing AI Services
+                        </div>
+
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Modular Laravel services make it possible
+                            to integrate additional medical AI
+                            capabilities without redesigning the
+                            entire application.
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULTS -->
+
+        <section
+            class="section"
+            id="results"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        09 / Results
+                    </span>
+
+
+                    <h2>
+                        A complete AI enabled clinical platform
+                    </h2>
+
+                </div>
+
+
+                <div class="results-grid">
+
+
+                    <article class="result">
+
+                        <h3>
+                            ECG Analysis
+                        </h3>
+
+                        <p>
+                            Technical ECG files and images can be
+                            processed through an AI powered analysis
+                            workflow.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Medical Vision
+                        </h3>
+
+                        <p>
+                            Clinical images can be submitted for
+                            AI powered classification and analysis.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Async Processing
+                        </h3>
+
+                        <p>
+                            Laravel queues and Redis allow complex
+                            AI operations to run in the background.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Notifications
+                        </h3>
+
+                        <p>
+                            Physicians receive status updates when
+                            reports become available.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Data Management
+                        </h3>
+
+                        <p>
+                            Automated scheduled processes support
+                            the platform's data retention workflow.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Modular Architecture
+                        </h3>
+
+                        <p>
+                            The Laravel architecture provides a
+                            foundation for additional medical AI
+                            services and workflows.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        10 / Future Improvements
+                    </span>
+
+
+                    <h2>
+                        Potential platform expansion
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            X Ray & CT Support
+                        </h3>
+
+                        <p>
+                            Extend AI vision capabilities to additional
+                            medical imaging workflows such as X rays
+                            and emergency CT scans.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Multilingual Reports
+                        </h3>
+
+                        <p>
+                            Generate clinical reports in multiple
+                            languages for international healthcare
+                            environments.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Predictive Triage Dashboard
+                        </h3>
+
+                        <p>
+                            Provide real time risk indicators that
+                            help physicians identify potentially urgent
+                            examinations.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Mobile Offline Mode
+                        </h3>
+
+                        <p>
+                            Develop a progressive web application with
+                            local first capabilities for clinics with
+                            unreliable connectivity.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="content">
+
+                    <p>
+                        Planned enhancements include expanding the AI
+                        models to additional medical imaging types,
+                        implementing predictive triage capabilities,
+                        supporting multilingual clinical reports and
+                        developing offline functionality for remote
+                        healthcare environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- KEY TAKEAWAY -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="takeaway">
+
+                    <span class="eyebrow">
+                        11 / Key Takeaway
+                    </span>
+
+
+                    <div class="takeaway-highlight">
+                        Complex medical AI workflows require strong backend architecture.
+                    </div>
+
+
+                    <p>
+                        AnamNex required more than connecting an AI
+                        service to a web application.
+                    </p>
+
+
+                    <p>
+                        The platform needed to manage physicians,
+                        patients, medical examinations, file uploads,
+                        AI analysis jobs, generated reports,
+                        notifications and automated data management.
+                    </p>
+
+
+                    <p>
+                        Laravel provided the application architecture,
+                        while Redis and Horizon handled the
+                        asynchronous processing required for complex
+                        AI operations.
+                    </p>
+
+
+                    <p>
+                        The result is a centralized clinical platform
+                        where technically complex AI workflows can be
+                        integrated into a practical physician facing
+                        application.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DEVELOPER -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="developer">
+
+
+                    <div>
+
+                        <span class="eyebrow">
+                            12 / Developer
+                        </span>
+
+
+                        <h2>
+                            Samiullah Popalzai
+                        </h2>
+
+
+                        <div class="developer-title">
+                            Full Stack Developer
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            I am a Full Stack Developer specializing in
+                            backend architecture, web applications,
+                            APIs, Laravel and modern application
+                            development.
+                        </p>
+
+
+                        <p>
+                            For AnamNex, my work covered Laravel
+                            backend architecture, database design,
+                            medical AI integrations, asynchronous
+                            processing, APIs, notifications and
+                            performance optimization.
+                        </p>
+
+
+                        <p>
+                            I focus on building practical and scalable
+                            systems capable of handling complex backend
+                            operations while keeping the user
+                            experience simple and reliable.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <section class="section cta">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    AnamNex
+                </span>
+
+
+                <h2>
+                    Explore the medical AI platform
+                </h2>
+
+
+                <p>
+                    Visit the AnamNex platform to explore the
+                    application.
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.anamnex.net"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Visit AnamNex
+                    </a>
+
+
+                    <a
+                        href="../../../../../../index.html"
+                        class="btn"
+                    >
+                        Back to Portfolio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <p>
+                © 2026 Samiullah Popalzai. All rights reserved.
+            </p>
+
+
+            <p>
+                Full Stack Developer | Laravel & Medical AI
+            </p>
+
         </div>
 
+    </footer>
 
-        <!-- Features section (organized as grid cards) -->
-        <div class="section">
-            <h2>Platform Features and Highlights</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>Automated ECG Analysis</h6>
-                    <p>Reads .mat, .hea technical files + images — arrhythmia detection & full clinical report</p>
-                </div>
-                <div class="card">
-                    <h6>Wound & Lesion Classification</h6>
-                    <p>AI-powered analysis of dermatological images with severity triage suggestions</p>
-                </div>
-                <div class="card">
-                    <h6>Real-time Notifications</h6>
-                    <p>Laravel Echo + Pusher — physicians get instant alerts when reports are ready</p>
-                </div>
-                <div class="card">
-                    <h6>Medical Data Privacy</h6>
-                    <p>60-day anonymization policy · LGPD/GDPR ready · End-to-end encryption for exams</p>
-                </div>
-                <div class="card">
-                    <h6>Queue-based Async Processing</h6>
-                    <p>Laravel Horizon + Redis — handles peak ER loads without UI blocking</p>
-                </div>
-                <div class="card">
-                    <h6>EHR Integration Ready</h6>
-                    <p>HL7 / FHIR compliant export — structured reports for hospital information systems</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Future Improvements section -->
-        <div class="section">
-            <h2>Future Improvements</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>X-ray & CT Support</h6>
-                    <p>Extend AI vision models to chest X-rays and emergency CT scans (pneumothorax, fractures)</p>
-                </div>
-                <div class="card">
-                    <h6>Multilingual Reports</h6>
-                    <p>Automatic translation of clinical reports (English, Spanish, Portuguese) for medical tourism</p>
-                </div>
-                <div class="card">
-                    <h6>Predictive Triage Dashboard</h6>
-                    <p>Real-time risk scoring for incoming ECGs — flag STEMI/high-risk arrhythmias first</p>
-                </div>
-                <div class="card">
-                    <h6>Mobile Offline Mode</h6>
-                    <p>PWA with local-first storage for rural clinics with intermittent internet</p>
-                </div>
-            </div>
-            <p style="margin-top: 16px;">Planned enhancements include expanding AI models to cover X-ray and CT emergency findings, implementing a predictive triage dashboard that flags critical ECG patterns in real-time, adding multilingual report generation for international hospital groups, and developing a progressive web app (PWA) with offline support for remote clinics. The Laravel-based architecture makes these additions seamless through modular service providers and event-driven design.</p>
-        </div>
-
-
-
-    </div>
 
 </body>
 
