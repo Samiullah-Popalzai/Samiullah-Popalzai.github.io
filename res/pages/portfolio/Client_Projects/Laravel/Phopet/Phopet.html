@@ -3,187 +3,1856 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Phopet · AI Pet Platform Laravel Case Study | AI Image Generation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts + The Great War Design System -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Phopet | AI Pet Platform Laravel Case Study</title>
+
+    <meta
+        name="description"
+        content="Phopet AI pet platform case study covering Laravel development, AI image generation, asynchronous model training, payments, APIs and platform architecture."
+    >
+
+    <meta name="author" content="Samiullah Popalzai">
+
     <link rel="stylesheet" href="../../../../../../style.css">
 
+    <style>
+        .scrollable-image {
+            max-height: 700px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: block;
+            cursor: default;
+        }
+
+        .scrollable-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .scrollable-image::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .scrollable-image::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .scrollable-image::-webkit-scrollbar-thumb {
+            background: rgba(245, 215, 122, 0.45);
+            border-radius: 10px;
+        }
+
+        .scrollable-image::-webkit-scrollbar-thumb:hover {
+            background: rgba(245, 215, 122, 0.7);
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <header>
-        <div class="row" style="padding: 0px 40px; padding-top: 20px;">
-            <p class="headline">Phopet: AI Pet Platform</p>
-            <a href="https://www.phopet.com/en" target="_blank" class="primaryButton">Visit Website →</a>
+    <header class="topbar">
+
+        <div class="container topbar-inner">
+
+            <a
+                href="../../../../../../index.html"
+                class="brand"
+            >
+                Samiullah <span>Popalzai</span>
+            </a>
+
+            <nav class="top-nav">
+
+                <a href="#overview">
+                    Overview
+                </a>
+
+                <a href="#role">
+                    My Role
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#results">
+                    Results
+                </a>
+
+            </nav>
+
         </div>
-        <img class="bannerImage" src="1.png" alt="Phopet AI Platform Homepage" style="width: 100%; object-fit: cover;"
-            onerror="this.onerror=null; this.src='https://placehold.co/1200x500/0f1420/7c9aff?text=Phopet+AI+Platform+Preview';">
+
     </header>
 
 
+    <main>
 
 
-    <div class="content">
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Laravel & AI Case Study
+                </span>
 
 
+                <h1>
+                    Phopet
+                    <span class="accent">
+                        AI Pet Image Platform
+                    </span>
+                </h1>
 
 
-        <!--Tech Stack & Tools-->
-        <div class="section">
-            <h2>Tech Stack & Tools</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>PHP / Laravel</h6>
-                </div>
-                <div class="card">
-                    <h6>Nginx</h6>
-                </div>
-                <div class="card">
-                    <h6>JavaScript</h6>
-                </div>
-                <div class="card">
-                    <h6>MySQL / Redis</h6>
-                </div>
-                <div class="card">
-                    <h6>AI APIs</h6>
-                </div>
-            </div>
-            <p>
-                Phopet is built on a robust Laravel PHP backend running on Nginx server for high-performance request handling. The platform leverages Laravel's queue system for asynchronous AI model training (30-60 minutes), Eloquent ORM for user and credit management, and Redis for caching. JavaScript powers the dynamic upload interface, real-time training progress indicators, and interactive album selections. The AI image generation integrates with custom-trained models via secure API endpoints.
-            </p>
-        </div>
-        <!--My Role-->
-        <div class="row section">
-            <div>
-                <h2>My Role</h2>
-                <p>
-                    As the lead backend and full-stack developer for Phopet, I architected and built the entire Laravel application from the ground up. I designed the database schema for user accounts, credit systems, model training jobs, and generated image storage. I implemented the queue worker infrastructure to handle long-running AI training tasks without blocking the user interface, ensuring a smooth experience even during peak loads.
+                <p class="lead">
+                    A Laravel based AI platform that transforms pet
+                    photos into custom AI generated artwork through
+                    asynchronous model training, themed image albums,
+                    credit based payments and automated processing.
                 </p>
-                <p>
-                    I developed RESTful APIs for communication between the frontend JavaScript and the AI generation backend, integrated payment processing for one-time credit purchases, and built admin dashboards for monitoring system health. I also implemented automated cleanup jobs for inactive user data (60-90 days), email notifications via Laravel notifications, and optimized Nginx configuration for static asset delivery of generated pet images. My role covered backend architecture, API development, database design, AI service integration, and performance optimization.
-                </p>
+
+
+                <div class="hero-meta">
+
+                    <span class="tag">Laravel</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Nginx</span>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.phopet.com/en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Visit Website
+                    </a>
+
+                    <a
+                        href="#overview"
+                        class="btn"
+                    >
+                        Explore Case Study
+                    </a>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <a
+                        href="1.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-link"
+                    >
+
+                        <img
+                            src="1.png"
+                            alt="Phopet AI pet platform homepage"
+                            loading="eager"
+                        >
+
+                    </a>
+
+                </div>
+
             </div>
-            <div>
-                <img src="../../../../../images/myrole.png" alt="Phopet backend dashboard"
-                    style="width: 100%; height: auto;" class="imageCard"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/101826/7c9aff?text=My+Role+-+Laravel+Backend+Architecture';">
-            </div>
-        </div>
 
-        <div class="section">
-            <h2>Client Review</h2>
-            <a href="rating.png" target="_blank">
-                <img src="rating.png" alt="Client rating" style="width: 100%; height: auto;" class="imageCard popup"
-                    onerror="this.onerror=null; this.src='https://placehold.co/1200x600/101826/7c9aff?text=Client+Review+5+Stars';">
-            </a>
-        </div>
+        </section>
 
 
-        <div class="section">
-            <h2>Complete Case Study</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>50+</h3>
-                    <p>AI-generated images per user from a single pet model training</p>
-                </div>
 
-                <div class="card">
-                    <h3>30-60 min</h3>
-                    <p>Asynchronous AI training via Laravel queues and Redis</p>
-                </div>
+        <!-- PROJECT INFORMATION -->
 
-                <div class="card">
-                    <h3>€9.90</h3>
-                    <p>Welcome pack pricing — one-time payment, no subscriptions</p>
-                </div>
+        <section class="section">
 
-                <div class="card">
-                    <h3>90 days</h3>
-                    <p>Data retention policy for inactive user accounts</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p>Phopet is an AI-powered platform that transforms ordinary pet photos into stunning, studio-quality artwork. Built exclusively for pets, the platform allows users to upload 10-20 photos of their furry friends to train a custom AI model. Once trained, users can generate images from over 40 themed albums (Superheroes, Travel, Studio, Dystopian) and even upscale them for high-resolution prints.</p>
+            <div class="container">
 
-                    <p>The client needed a scalable, high-performance web application that could handle asynchronous AI model training, credit-based payments, and a seamless user experience. I built the platform using Laravel on Nginx, with a JavaScript frontend for dynamic interactions. The backend manages user authentication, credit purchases, queue jobs for AI training, and secure API integrations with the image generation service.</p>
+                <div class="info-grid">
 
-                    <p>One key challenge was handling the 30-60 minute AI training time without forcing users to wait on a loading screen. I implemented Laravel's queue system with Redis to process training jobs asynchronously, sending email notifications via Laravel Notifications when a model is ready. Another challenge was data cleanup — I built automated scheduled commands to permanently delete inactive user models and images after 90 days, keeping the database lean and compliant with privacy expectations.</p>
-
-                    <p>After launch, Phopet successfully processes hundreds of concurrent training jobs, with users receiving their generated images reliably. The one-time payment model (starting at €9.90 for 50 images) has proven attractive to pet owners who want quality results without subscription fatigue. The platform continues to scale, with additional albums and features being added regularly through the Laravel-based admin dashboard.</p>
-                </div>
-                <div class="card" style="padding: 5px;">
-                    <div class="scrollable popup" style="flex: 1; height: 1000px; overflow-y: auto; padding: 10px;">
-                        <img src="full.jpeg" style="width: 100%; padding-top: 5px;">
-                        
+                    <div class="info-item">
+                        <span class="info-label">Project</span>
+                        <div class="info-value">Phopet</div>
                     </div>
-                    <p style="text-align: center;">Platform Walkthrough</p>
+
+                    <div class="info-item">
+                        <span class="info-label">Role</span>
+                        <div class="info-value">
+                            Lead Backend & Full Stack Developer
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Backend</span>
+                        <div class="info-value">PHP / Laravel</div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Server</span>
+                        <div class="info-value">Nginx</div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Database</span>
+                        <div class="info-value">MySQL / Redis</div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">AI</span>
+                        <div class="info-value">
+                            Custom AI Model Integration
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Training Time</span>
+                        <div class="info-value">
+                            30 to 60 Minutes
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Platform</span>
+                        <div class="info-value">
+                            Web Application
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+
+        </section>
+
+
+
+        <!-- OVERVIEW -->
+
+        <section
+            class="section"
+            id="overview"
+        >
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        01 / Overview
+                    </span>
+
+                    <h2>
+                        Turning ordinary pet photos into AI generated artwork
+                    </h2>
+
+                    <p>
+                        Phopet is an AI powered platform designed
+                        specifically for pet owners who want to transform
+                        ordinary photographs of their pets into
+                        high quality digital artwork.
+                    </p>
+
+                    <p>
+                        Users can upload approximately 10 to 20 photos
+                        of their pet and use those images to train a
+                        custom AI model.
+                    </p>
+
+                    <p>
+                        Once training is completed, users can generate
+                        images through a collection of themed albums
+                        covering concepts such as Superheroes, Travel,
+                        Studio and Dystopian artwork.
+                    </p>
+
+                    <p>
+                        The platform also supports image upscaling for
+                        higher resolution artwork suitable for printing.
+                    </p>
+
+                    <p>
+                        The application required a backend architecture
+                        capable of handling long running AI operations,
+                        user accounts, credit based payments, image
+                        generation and background processing.
+                    </p>
+
+                    <p>
+                        I built the platform using Laravel and Nginx,
+                        with JavaScript powering the dynamic frontend
+                        interactions and Redis handling asynchronous
+                        processing and caching.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MY ROLE -->
+
+        <section
+            class="section"
+            id="role"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        02 / My Role
+                    </span>
+
+                    <h2>
+                        Lead backend and full stack development
+                    </h2>
+
+                    <p>
+                        I architected and developed the Laravel
+                        application from the ground up, covering
+                        backend architecture, database design, APIs,
+                        AI integration, payments and background
+                        processing.
+                    </p>
+
+                </div>
+
+
+                <div class="performance-grid">
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Backend Architecture
+                            </strong>
+
+                            <span>
+                                Laravel
+                            </span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <p>
+                                Designed and implemented the Laravel
+                                application architecture, business
+                                logic and backend services.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Database Design
+                            </strong>
+
+                            <span>
+                                MySQL
+                            </span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <p>
+                                Designed database structures for users,
+                                credits, AI training jobs and generated
+                                image data.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                AI Integration
+                            </strong>
+
+                            <span>
+                                AI APIs
+                            </span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <p>
+                                Integrated the application with custom
+                                AI model training and image generation
+                                services through secure API endpoints.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="performance-card">
+
+                        <div class="performance-label">
+
+                            <strong>
+                                Queue Processing
+                            </strong>
+
+                            <span>
+                                Redis
+                            </span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <p>
+                                Implemented asynchronous Laravel queue
+                                processing for long running AI training
+                                operations.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TECH STACK -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        03 / Technology
+                    </span>
+
+                    <h2>
+                        Technology stack
+                    </h2>
+
+                    <p>
+                        The platform combines a Laravel backend,
+                        JavaScript frontend, relational database,
+                        Redis based background processing and AI
+                        service integrations.
+                    </p>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Backend
+                        </h3>
+
+                        <div class="stack-item">
+                            <strong>PHP</strong>
+                            <span>
+                                Server side application language
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Laravel</strong>
+                            <span>
+                                Application framework and backend
+                                architecture
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Eloquent ORM</strong>
+                            <span>
+                                Database interaction and application
+                                models
+                            </span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Infrastructure
+                        </h3>
+
+                        <div class="stack-item">
+                            <strong>Nginx</strong>
+                            <span>
+                                Web server and request handling
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Redis</strong>
+                            <span>
+                                Queue processing and caching
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>MySQL</strong>
+                            <span>
+                                Application database
+                            </span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+                        <div class="stack-item">
+                            <strong>JavaScript</strong>
+                            <span>
+                                Dynamic frontend interactions
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Upload Interface</strong>
+                            <span>
+                                Dynamic pet photo upload experience
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Progress Interface</strong>
+                            <span>
+                                Training progress and status updates
+                            </span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            AI Services
+                        </h3>
+
+                        <div class="stack-item">
+                            <strong>AI APIs</strong>
+                            <span>
+                                Secure communication with AI services
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Custom Models</strong>
+                            <span>
+                                Pet specific AI model training
+                            </span>
+                        </div>
+
+                        <div class="stack-item">
+                            <strong>Image Generation</strong>
+                            <span>
+                                Themed AI generated artwork
+                            </span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ARCHITECTURE -->
+
+        <section
+            class="section"
+            id="architecture"
+        >
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        04 / Architecture
+                    </span>
+
+                    <h2>
+                        Designing around long running AI operations
+                    </h2>
+
+                    <p>
+                        One of the central architectural challenges was
+                        the AI model training process.
+                    </p>
+
+                    <p>
+                        Training a pet model can take approximately
+                        30 to 60 minutes. Running that process directly
+                        inside a normal web request would create a poor
+                        user experience and potentially block server
+                        resources.
+                    </p>
+
+                    <p>
+                        I therefore implemented Laravel's queue system
+                        with Redis so that training jobs could be
+                        processed asynchronously.
+                    </p>
+
+                    <p>
+                        The user can submit their pet photos and leave
+                        the training process running in the background
+                        instead of remaining on a loading screen for
+                        the entire duration.
+                    </p>
+
+                    <p>
+                        Once the model is ready, the platform can notify
+                        the user through Laravel Notifications.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Upload
+                        </h3>
+
+                        <p>
+                            User uploads approximately 10 to 20 photos
+                            of their pet.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Queue
+                        </h3>
+
+                        <p>
+                            Laravel creates a background training job
+                            instead of blocking the web request.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Training
+                        </h3>
+
+                        <p>
+                            Redis backed workers process the AI model
+                            training operation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Notification
+                        </h3>
+
+                        <p>
+                            The user receives an email notification when
+                            the model becomes available.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Generation
+                        </h3>
+
+                        <p>
+                            The trained model is used to generate themed
+                            pet artwork.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- COMPLETE CASE STUDY -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        05 / Complete Case Study
+                    </span>
+
+                    <h2>
+                        Building a scalable AI pet platform
+                    </h2>
+
+                </div>
+
+
+                <div class="results-grid">
+
+                    <article class="result">
+
+                        <h3>
+                            50+
+                        </h3>
+
+                        <p>
+                            AI generated images per user from a single
+                            trained pet model.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            30 to 60 min
+                        </h3>
+
+                        <p>
+                            Asynchronous AI training through Laravel
+                            queues and Redis.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            €9.90
+                        </h3>
+
+                        <p>
+                            Welcome pack pricing with a one time payment
+                            model.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            90 days
+                        </h3>
+
+                        <p>
+                            Inactivity period used for automated data
+                            cleanup.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="performance-grid">
+
+                    <div class="content">
+
+                        <p>
+                            Phopet is an AI powered platform that
+                            transforms ordinary pet photos into
+                            studio quality artwork.
+                        </p>
+
+                        <p>
+                            Users can upload 10 to 20 photos of their
+                            pets and train a custom AI model before
+                            generating images through more than 40
+                            themed albums.
+                        </p>
+
+                        <p>
+                            The platform was designed to handle
+                            asynchronous AI training, credit based
+                            payments and a seamless user experience.
+                        </p>
+
+                        <p>
+                            I built the application using Laravel on
+                            Nginx, with JavaScript powering dynamic
+                            interactions and Redis supporting
+                            background processing.
+                        </p>
+
+                        <p>
+                            One of the most important technical
+                            challenges was handling the 30 to 60 minute
+                            AI training process without forcing users to
+                            remain on a loading screen.
+                        </p>
+
+                        <p>
+                            Laravel queues and Redis allowed the
+                            training process to run asynchronously while
+                            Laravel Notifications informed users when
+                            their model became available.
+                        </p>
+
+                        <p>
+                            I also implemented automated scheduled
+                            commands for inactive user data, helping
+                            keep the application database and stored
+                            media under control.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SCROLLABLE FULL SCREENSHOT -->
+
+                    <div class="image-block">
+
+                        <div class="image-link scrollable-image">
+
+                            <img
+                                src="full.jpeg"
+                                alt="Phopet platform walkthrough"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="image-caption">
+                            Platform Walkthrough · Scroll to explore
+                            the full platform.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURES -->
+
+        <section
+            class="section"
+            id="features"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        06 / Features
+                    </span>
+
+                    <h2>
+                        Platform features and highlights
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+                    <article class="stack-card">
+
+                        <h3>
+                            AI Model Training
+                        </h3>
+
+                        <p>
+                            Users can train a custom pet model from
+                            approximately 10 to 20 uploaded photos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            40+ Themed Albums
+                        </h3>
+
+                        <p>
+                            Users can create artwork through themed
+                            concepts including Superheroes, Travel,
+                            Studio and Dystopian scenes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Credit System
+                        </h3>
+
+                        <p>
+                            Users purchase credits through one time
+                            payments and use them for image generation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Image Upscaling
+                        </h3>
+
+                        <p>
+                            Generated images can be enlarged for
+                            higher resolution artwork.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Email Notifications
+                        </h3>
+
+                        <p>
+                            Laravel Notifications inform users when
+                            long running AI training processes complete.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Automated Cleanup
+                        </h3>
+
+                        <p>
+                            Scheduled backend commands manage inactive
+                            user data and generated content.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PAYMENT SYSTEM -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        07 / Payments
+                    </span>
+
+                    <h2>
+                        Credit based payment architecture
+                    </h2>
+
+                    <p>
+                        Phopet uses a credit based purchasing model
+                        rather than requiring users to maintain a
+                        recurring subscription.
+                    </p>
+
+                    <p>
+                        I implemented the backend logic required to
+                        manage user credits and connect purchases with
+                        the user's account.
+                    </p>
+
+                    <p>
+                        This allowed the platform to connect payment
+                        transactions with image generation usage while
+                        keeping the user account and credit balance
+                        centralized within the Laravel application.
+                    </p>
+
+                    <p>
+                        The welcome package starts at €9.90 for 50
+                        generated images.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- USER EXPERIENCE -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        08 / User Experience
+                    </span>
+
+                    <h2>
+                        Making a complex AI workflow feel simple
+                    </h2>
+
+                    <p>
+                        AI model training is technically complex, but
+                        users should not need to understand the
+                        underlying infrastructure.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Upload Photos
+                        </h3>
+
+                        <p>
+                            Users provide photos of their pet through a
+                            dynamic upload interface.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Start Training
+                        </h3>
+
+                        <p>
+                            The application submits the training job
+                            without blocking the user's browser.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Background Processing
+                        </h3>
+
+                        <p>
+                            The long running training process continues
+                            in the background.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Receive Notification
+                        </h3>
+
+                        <p>
+                            Laravel Notifications alert the user when
+                            the model is ready.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-card">
+
+                        <span class="process-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Generate Artwork
+                        </h3>
+
+                        <p>
+                            Users select albums and generate new artwork
+                            using their trained pet model.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- AUTOMATION -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="content">
+
+                    <span class="eyebrow">
+                        09 / Automation
+                    </span>
+
+                    <h2>
+                        Automated maintenance and data cleanup
+                    </h2>
+
+                    <p>
+                        The platform also required automated maintenance
+                        so that inactive accounts and generated data
+                        would not accumulate indefinitely.
+                    </p>
+
+                    <p>
+                        I implemented scheduled Laravel commands that
+                        identify inactive user data and permanently
+                        remove applicable models and images after the
+                        defined retention period.
+                    </p>
+
+                    <p>
+                        This keeps the database and stored media more
+                        manageable while supporting the platform's
+                        privacy and data management requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CLIENT REVIEW -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        10 / Client Review
+                    </span>
+
+                    <h2>
+                        Client feedback
+                    </h2>
+
+                </div>
+
+
+                <div class="image-block">
+
+                    <a
+                        href="rating.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-link"
+                    >
+
+                        <img
+                            src="rating.png"
+                            alt="Phopet client rating"
+                            loading="lazy"
+                        >
+
+                    </a>
+
+                    <div class="image-caption">
+                        Client rating for the Phopet project.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CHALLENGES -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        11 / Challenges & Solutions
+                    </span>
+
+                    <h2>
+                        Engineering around the difficult parts
+                    </h2>
+
+                </div>
+
+
+                <div class="challenge-list">
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Long AI Training Times
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Laravel queues and Redis were used to
+                            process AI training asynchronously instead
+                            of blocking web requests.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            User Experience During Training
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Training jobs run in the background while
+                            the platform communicates status through
+                            notifications.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            AI API Integration
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Secure backend API endpoints were implemented
+                            to communicate between Laravel and the AI
+                            generation services.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Credit Management
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            User credits and purchases were managed
+                            directly through the Laravel application and
+                            database.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Data Accumulation
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Automated scheduled commands remove
+                            applicable inactive user data and generated
+                            assets after the defined retention period.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="challenge">
+
+                        <div class="challenge-title">
+                            Generated Image Delivery
+                        </div>
+
+                        <div class="solution">
+
+                            <strong>
+                                Solution
+                            </strong>
+
+                            Nginx configuration and backend architecture
+                            were optimized for serving generated image
+                            assets efficiently.
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULTS -->
+
+        <section
+            class="section"
+            id="results"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        12 / Results
+                    </span>
+
+                    <h2>
+                        A complete AI powered web application
+                    </h2>
+
+                </div>
+
+
+                <div class="results-grid">
+
+                    <article class="result">
+
+                        <h3>
+                            AI Training
+                        </h3>
+
+                        <p>
+                            Long running pet model training is processed
+                            asynchronously through Laravel queues and
+                            Redis.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Image Generation
+                        </h3>
+
+                        <p>
+                            Users can generate artwork from their trained
+                            pet models across themed albums.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Payments
+                        </h3>
+
+                        <p>
+                            A credit based one time payment model
+                            connects purchases with image generation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Automation
+                        </h3>
+
+                        <p>
+                            Scheduled Laravel commands manage inactive
+                            data and generated assets.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Notifications
+                        </h3>
+
+                        <p>
+                            Users receive notifications when background
+                            AI training processes are completed.
+                        </p>
+
+                    </article>
+
+
+                    <article class="result">
+
+                        <h3>
+                            Scalable Architecture
+                        </h3>
+
+                        <p>
+                            Laravel, Redis, MySQL and Nginx provide a
+                            structured foundation for continued platform
+                            development.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        13 / Future Improvements
+                    </span>
+
+                    <h2>
+                        Potential platform expansion
+                    </h2>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Multi Pet Models
+                        </h3>
+
+                        <p>
+                            Support multiple trained pet models within
+                            a single user account.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Physical Merchandise
+                        </h3>
+
+                        <p>
+                            Integrate print on demand services for
+                            posters, mugs, phone cases and other
+                            products.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            AI Video Generation
+                        </h3>
+
+                        <p>
+                            Expand the platform from static artwork into
+                            short AI generated pet video clips.
+                        </p>
+
+                    </article>
+
+
+                    <article class="stack-card">
+
+                        <h3>
+                            Partner API
+                        </h3>
+
+                        <p>
+                            Provide a whitelabel API for pet brands,
+                            veterinary clinics and other partners.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="content">
+
+                    <p>
+                        Planned enhancements include supporting
+                        multiple pet models within a single account,
+                        integrating print on demand services, expanding
+                        into AI video generation and providing API
+                        access for partners in the pet industry.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- KEY TAKEAWAY -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="takeaway">
+
+                    <span class="eyebrow">
+                        14 / Key Takeaway
+                    </span>
+
+                    <div class="takeaway-highlight">
+                        Complex AI workflows can still feel simple to users.
+                    </div>
+
+                    <p>
+                        Phopet required more than connecting an AI API to
+                        a website.
+                    </p>
+
+                    <p>
+                        The platform needed a complete backend system
+                        capable of handling users, payments, credits,
+                        uploaded images, AI model training, background
+                        jobs, notifications and automated maintenance.
+                    </p>
+
+                    <p>
+                        Laravel provided the application architecture,
+                        while Redis and queues solved the challenge of
+                        long running AI operations.
+                    </p>
+
+                    <p>
+                        The result is a structured AI platform where the
+                        complexity of model training and backend
+                        processing remains largely behind the scenes,
+                        allowing users to focus on creating artwork from
+                        their pets.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DEVELOPER -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="developer">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            15 / Developer
+                        </span>
+
+                        <h2>
+                            Samiullah Popalzai
+                        </h2>
+
+                        <div class="developer-title">
+                            Full Stack Developer
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            I am a Full Stack Developer specializing in
+                            backend architecture, web applications,
+                            APIs, WordPress, Laravel and modern
+                            application development.
+                        </p>
+
+                        <p>
+                            For Phopet, my work covered the Laravel
+                            backend, database architecture, AI service
+                            integration, queue processing, Redis,
+                            payment logic, notifications and automated
+                            maintenance.
+                        </p>
+
+                        <p>
+                            I focus on building practical, scalable
+                            systems that can handle complex backend
+                            operations while providing users with a
+                            simple and reliable experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <section class="section cta">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    Phopet
+                </span>
+
+                <h2>
+                    Explore the AI pet platform
+                </h2>
+
+                <p>
+                    Visit the live Phopet platform to explore the
+                    application.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.phopet.com/en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Visit Phopet
+                    </a>
+
+                    <a
+                        href="../../../../../../index.html"
+                        class="btn"
+                    >
+                        Back to Portfolio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <p>
+                © 2026 Samiullah Popalzai. All rights reserved.
+            </p>
+
+            <p>
+                Full Stack Developer | Laravel & AI Development
+            </p>
+
         </div>
 
+    </footer>
 
-        <!-- Features section (organized as grid cards) -->
-        <div class="section">
-            <h2>Platform Features and Highlights</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>AI Model Training</h6>
-                    <p>Custom pet model from 10-20 uploaded photos (30-60 min)</p>
-                </div>
-                <div class="card">
-                    <h6>40+ Themed Albums</h6>
-                    <p>Superheroes, Travel, Studio, Dystopian, and more</p>
-                </div>
-                <div class="card">
-                    <h6>Credit System</h6>
-                    <p>One-time payments, no subscriptions — buy credits as needed</p>
-                </div>
-                <div class="card">
-                    <h6>Image Upscaling</h6>
-                    <p>High-resolution enlargements for print-ready artwork</p>
-                </div>
-                <div class="card">
-                    <h6>Email Notifications</h6>
-                    <p>Real-time alerts when AI training completes</p>
-                </div>
-                <div class="card">
-                    <h6>Automated Cleanup</h6>
-                    <p>90-day inactivity policy — GDPR-aware data management</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Future Improvements section -->
-        <div class="section">
-            <h2>Future Improvements</h2>
-            <div class="grid">
-                <div class="card">
-                    <h6>Multi-Pet Models</h6>
-                    <p>Train and switch between models for multiple pets in one account</p>
-                </div>
-                <div class="card">
-                    <h6>Physical Merch Store</h6>
-                    <p>Direct print-on-demand integration for posters, mugs, phone cases</p>
-                </div>
-                <div class="card">
-                    <h6>Video Generation</h6>
-                    <p>Short AI-generated video clips of pets in animated scenes</p>
-                </div>
-                <div class="card">
-                    <h6>API for Partners</h6>
-                    <p>Whitelabel API for pet brands and veterinary clinics</p>
-                </div>
-            </div>
-            <p style="margin-top: 16px;">Planned enhancements include supporting multi-pet models within a single account, integrating with print-on-demand services for physical merchandise, expanding into AI video generation, and offering a whitelabel API for pet industry partners to embed Phopet's technology.</p>
-        </div>
-
-
-
-    </div>
 
 </body>
 
